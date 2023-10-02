@@ -1,69 +1,72 @@
-/* HeaderStyle.module.css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Hidden styles start */
+.menueOpenDiv {
+  display: none;
+}
+.menueOpenImg {
+  display: none;
+}
+/* Hidden styles end */
 
 /* Style for the entire header */
 .landingPageHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    /* align-items: center; */
+    padding: 28px 100px 0 100px;
     background-color: #fff; /* Background color for the header */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   }
   
   /* Style for the left section (logo and navigation) */
   .leftSection {
     display: flex;
     align-items: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
   
   .logo {
-    font-size: 20px;
-    font-weight: 700px;
-    margin-left: 20px; /* Adjust spacing as needed */
     color: #52489C;
+    font-family: League Spartan;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
 
 }
   
-  nav ul {
+  .ul {
     list-style: none;
     display: flex;
-    margin-left: 40px;
-    gap: 35px; /* Adjust spacing between navigation items */
+    margin-left: 118px;
+    gap: 35px;
   }
   
-  nav ul li a {
+  .link {
     text-decoration: none;
      color: #46435b;/* Text color for navigation links */
     font-weight: 400px;
     font-size: 18px;
+  }
+  .link:hover {
+     color: #52489C;
+     font-weight: 600;
   }
   
   /* Style for the right section (cart icon and search input) */
   .rightSection {
     display: flex;
     align-items: center;
-    margin-right: 10%;
   }
   
   .cartSection {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Adjust spacing as needed */
   }
-  
-  .cartIcon {
-    /* Style your cart icon image here */
-    width: 30px; /* Adjust the size of the cart icon */
-    height: 30px;
-    /* Add background image or use an <img> tag */
-  }
-  
-  .cartLabel {
-    margin-left: 5px; /* Spacing between the cart icon and label */
-  }
-
- 
   .searchInput {
     margin-left: 20px;
     display: flex;
@@ -73,7 +76,7 @@
   
   .searchIcon {
     /* Style your search icon image here */
-    width: 20px; /* Adjust the size of the search icon */
+    width: 20px;
     height: 20px;
     position: absolute;
     top: 50%;
@@ -82,12 +85,47 @@
   }
   
   .searchTextInput {
-    padding: 10px 30px; /* Adjust right padding for space for the search icon */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 375px;
+    height: 38px;
+    /* padding-left: 20px; */
+    border: 1px solid #46435B;
+    border-radius: 10px;
     font-size: 16px;
-    text-indent: 20px; /* Move the placeholder text to the right */
-   
-  
+    text-indent: 40px;
   }
   
+/* Mobile style start */
+@media (max-width: 1270px) {
+  .landingPageHeader {
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 28px 30px 0 30px;
+
+  }
+  .ul {
+    display: none;
+  }
+  .searchTextInput {
+    display: none;
+  }
+
+  .menueOpenDiv {
+    display: block;
+  }
+  .menueOpenImg {
+    display: block;
+  }
+  .searchIcon {
+    /* Style your search icon image here */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -100px; /* Adjust the left position of the search icon */
+    transform: translateY(-50%);
+  }
+  .cartIcon {
+    margin-right: 10px;
+  }
+}
