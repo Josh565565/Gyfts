@@ -1,0 +1,91 @@
+/* GiftOccasionsDropdown.module.css */
+.dropdownContainer {
+  display: flex;
+  align-items: flex-start; /* Align the headings and lists at the top */
+  width:44%;
+ height: 44%; /* Set the height to match the width */
+  border: 1px solid #46435b;
+  border-radius: 5px;
+  margin-left: 15%;
+  margin-top:5%;
+  margin-bottom:40px;
+  position: absolute;
+  right: 4;
+  z-index: 1; /* Ensure it's above other content */
+}
+
+
+
+.dropdownSection {
+  flex: 1;
+  text-align: center;
+  position: relative; /* Add relative positioning */
+  padding: 0 10px; /* Add horizontal padding */
+}
+
+.sectionHeading {
+  position: relative;
+  z-index: 1; /* Place headings above the line */
+  margin-top:20px;
+  color: #52489c;
+
+}
+
+/* GiftOccasionsDropdown.module.css */
+.sectionHeading {
+  position: relative;
+  margin-bottom: 10%;
+}
+
+/* GiftOccasionsDropdown.module.css */
+.sectionHeading {
+  position: relative;
+}
+
+/* GiftOccasionsDropdown.module.css */
+
+.dropdownList {
+  list-style: none;
+  padding: 0;
+  color: #46435b;
+}
+
+.dropdownList li {
+  margin: 8px ;
+}
+
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .dropdownContainer {
+    width: 80%; /* Adjust the width for smaller screens */
+    height: auto; /* Remove fixed height */
+    margin: 5% auto; /* Center the dropdown vertically */
+  }
+
+  .dropdownSection {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .sectionHeading {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 5px; /* Reduce margin for smaller screens */
+    color: #52489c;
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .dropdownList {
+    list-style: none;
+    padding: 0;
+    color: #46435b;
+  }
+
+  .dropdownList li {
+    margin: 6px; /* Adjust margin for smaller screens */
+  }
+}
