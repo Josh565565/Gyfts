@@ -1,0 +1,31 @@
+/* GiftBasket.module.css */
+
+.gift-basket {
+ border: 2px solid #52489c;
+ border-radius: 0 20px;
+ width: 500px;
+ height: 251px;
+ margin-left: 20%;
+ margin-top:65px;
+text-align: center; /* Center the content */
+}
+
+.basket-content {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29.44px;
+  border-bottom: 1px solid #52489c; /* Add an underline under the h1 */
+  margin-bottom: 20px; /* Add margin to the bottom of the h1 */
+  width: 30%; /* Adjust the width of the underline to 50% */
+  margin-left: 40%; /* Center the underline by adjusting the left margin */
+}
+
+.list-items {
+  list-style: none; /* Remove list item bullets */
+  margin-bottom: 5px;
+}
+
+.list-items li {
+    margin-bottom: 10px; /* Add margin to the bottom of each list item */
+  }
