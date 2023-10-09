@@ -52,6 +52,24 @@ display: none;
   font-weight: 400px;
   font-size: 18px;
 }
+.basketCon {
+  position: relative;
+  /* padding-bottom: 20px; */
+}
+.basketDropDownDiv {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+}
+.occasionsCon {
+  position: relative;
+  /* padding-bottom: 20px; */
+}
+.occasionsDropDownDiv {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+}
 .link:hover {
    color: #52489C;
    font-weight: 600;

@@ -1,0 +1,117 @@
+/* GiftOccasionsDropdown.module.css */
+.dropdownContainer {
+    display: flex;
+    width: 40.875rem;
+    height: 24.4375rem;
+    border-radius: 0rem 1.25rem 1.25rem 1.25rem;
+    border: 2px solid #52489C;
+    background: #FFF;
+    margin-left: 15%;
+    margin-top: 5%;
+  
+  }
+  
+  
+  .dropdownSection {
+    /* flex: 1; */
+    /* text-align: center; */
+    position: relative; 
+    padding: 0 10px; 
+  }
+  
+  .sectionHeading {
+    position: relative;
+    z-index: 1; 
+    margin-top:20px;
+    color: #52489c;
+  
+  }
+  
+  /* GiftOccasionsDropdown.module.css */
+  .sectionHeading {
+    position: relative;
+    margin-bottom: 10%;
+  }
+  
+  /* GiftOccasionsDropdown.module.css */
+  .sectionHeading {
+    position: relative;
+  }
+  
+  /* GiftOccasionsDropdown.module.css */
+  
+  .dropdownList {
+    list-style: none;
+    padding: 0;
+    color: #46435b;
+  }
+  
+  /* .dropdownList li {
+    margin: 8px ;
+  } */
+  
+  
+  
+  /* For mobile view */
+  @media (max-width: 768px) {
+    .dropdownContainer {
+      width: 40%;
+      margin: 5% auto 0 40%; /* Adjusted margin for vertical centering */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dropdownSection {
+      text-align: left;
+    }
+  
+    .sectionHeading {
+      position: relative;
+      
+      font-size: 20px;
+      cursor: pointer;
+      margin-bottom: 0 !important; /* Remove margin-bottom */
+    }
+     
+    
+  
+    .sectionHeading::after {
+      content: " >"; /* Greater-than sign as the dropdown icon */
+      position: absolute;
+      right: -10px; /* Adjusted right position for alignment to the right */
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #46435b;
+      transition: transform 0.3s;
+    }
+  
+    .active .sectionHeading::after {
+      transform: translateY(-50%) rotate(90deg); /* Rotate the arrow when active */
+    }
+  
+    .dropdownList {
+      list-style: none;
+      padding: 0;
+      color: #46435b;
+      display: none;
+      border: none; /* Remove border */
+    }
+  
+    /* .dropdownList li {
+      margin: 8px;
+    } */
+  
+    /* Show the dropdown list when the section is active */
+    .active .dropdownList {
+      display: block;
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      border: none; /* Remove border */
+      border-radius: 5px;
+      z-index: 1;
+    }
+  }
+  

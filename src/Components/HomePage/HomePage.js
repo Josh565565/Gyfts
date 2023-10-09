@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import homeStyle from "./HomePageStyle.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 // Images import start
-import LandingPic from "../Assets/images/landingPic.png";
+import LandingPic from "../Assets/images/landingPic.svg";
 import ShopCart from "../Assets/images/shopCart.png";
 import Partners from "../Assets/images/partners.png";
 import WeddingGifts from "../Assets/images/Wedding-gifts.png";
@@ -24,7 +24,7 @@ import MensGroomingBasket from "../Assets/images/Mens-Grooming-Basket.png";
 import Clock from "../Assets/images/Clock.png";
 import Delivery from "../Assets/images/delivery.png";
 import ReturnPolicy from "../Assets/images/return-policy.png";
-import LandingPicMobile from "../Assets/images/landing-pic-mobile.png";
+import LandingPicMobile from "../Assets/images/landing-pic-mobile.svg";
 import PartnersMobile from "../Assets/images/partner-mobile.png";
 import BrandNewMobile from "../Assets/images/brand-new-pic-mobile.png";
 

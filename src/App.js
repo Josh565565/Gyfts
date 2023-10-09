@@ -9,15 +9,20 @@ import Checkout from "./Components/CheckoutPage/Checkout";
 import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import GiftOccasionsDropdown from "./Components/Dropdown/GiftOccasionsDropdown";
 import GiftBasket from "./Components/Dropdown/GiftBasket";
+import MobileDropDown from "./Components/Dropdown/MobileDropDown";
 
 function App() {
   return (
     <div className="App">
       {/* <Footer /> */}
-      <HomePage />
-      <HomePage />
-      <HomePage />
-      <HomePage />
+      {/* <HomePage /> */}
+      {/* <ProductListingPage /> */}
+      {/* <ShoppingCartPage /> */}
+      {/* <Checkout /> */}
+      {/* <ProductDetails /> */}
+      {/* <GiftOccasionsDropdown /> */}
+      {/* <GiftBasket /> */}
+      <MobileDropDown />
     </div>
   );
 }

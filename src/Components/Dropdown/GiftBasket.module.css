@@ -1,32 +1,42 @@
 /* GiftBasket.module.css */
 
 .gift-basket {
- border: 2px solid #52489c;
- border-radius: 0 20px;
- width: 500px;
- height: 251px;
- margin-left: 20%;
- margin-top:65px;
-text-align: center; /* Center the content */
+  width: 16.75rem;
+  height: 15.6875rem;
+  border-radius: 0rem 1.25rem 1.25rem 1.25rem;
+  border: 2px solid #52489C;
+  background: #FFF;
+  margin: 10px 0 0 5px;
+  /* position: absolute; */
 }
 
 .basket-content {
-    margin-top: 15px;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 29.44px;
-  border-bottom: 1px solid #52489c; /* Add an underline under the h1 */
-  margin-bottom: 20px; /* Add margin to the bottom of the h1 */
-  width: 30%; /* Adjust the width of the underline to 50% */
-  margin-left: 20%; /* Center the underline by adjusting the left margin */
+  border-bottom: 1px solid #52489c;
+  margin: 25px;
+  color: #52489C;
+  font-family: League Spartan;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+ 
 }
 
 .list-items {
-  list-style: none; /* Remove list item bullets */
-  margin-bottom: 5px;
+  list-style: none;
+  margin: 0 0 0 25px;
 }
 
-.list-items li {
-   margin-left: -200px;
-    margin-bottom: 10px; /* Add margin to the bottom of each list item */
-  }
+.list-items .li {
+  color: #46435B;
+  font-family: League Spartan;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.list-items .li:hover {
+  color: #52489C;
+  font-weight: 600;
+}
