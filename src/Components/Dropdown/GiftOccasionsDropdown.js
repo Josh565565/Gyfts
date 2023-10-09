@@ -10,7 +10,7 @@ function GiftOccasionsDropdown() {
 
   return (
     <div className={styles.dropdownContainer}>
-      <div className={`${styles.dropdownSection} ${activeDropdown === 'events' && styles.active}`}>
+      <div className={`${styles.dropdownSection} ${styles.occasionSection} ${activeDropdown === 'events' && styles.active}`}>
         <h3
           className={styles.sectionHeading}
           onClick={() => toggleDropdown('events')}
@@ -28,7 +28,7 @@ function GiftOccasionsDropdown() {
           <li>Graduation Gifts</li>
         </ul>
       </div>
-      <div className={`${styles.dropdownSection} ${activeDropdown === 'seasonal' && styles.active}`}>
+      <div className={`${styles.dropdownSection} ${styles.occasionSection} ${activeDropdown === 'seasonal' && styles.active}`}>
         <h3
           className={styles.sectionHeading}
           onClick={() => toggleDropdown('seasonal')}
@@ -39,11 +39,11 @@ function GiftOccasionsDropdown() {
           <li>Mother's Day Gift</li>
           <li>Father's Day Gift</li>
           <li>Christmas Gift</li>
-          <li>Valentine Day</li>
-          <li>Easter Day</li>
+          <li>Valentine's Day Gift</li>
+          <li>Easter Day Gift</li>
         </ul>
       </div>
-      <div className={`${styles.dropdownSection} ${activeDropdown === 'recipients' && styles.active}`}>
+      <div className={`${styles.dropdownSection} ${styles.occasionSection} ${activeDropdown === 'recipients' && styles.active}`}>
         <h3
           className={styles.sectionHeading}
           onClick={() => toggleDropdown('recipients')}
@@ -53,7 +53,7 @@ function GiftOccasionsDropdown() {
         <ul className={`${styles.dropdownList} ${activeDropdown === 'recipients' && styles.active}`}>
           <li>Gift for Men</li>
           <li>Gift for Women</li>
-          <li>Gift for Parent</li>
+          <li>Gift for Parents</li>
           <li>Gift for Children</li>
           <li>Gift for Friends</li>
         </ul>
