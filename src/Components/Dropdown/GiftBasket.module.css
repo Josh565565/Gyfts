@@ -18,7 +18,7 @@ text-align: center; /* Center the content */
   border-bottom: 1px solid #52489c; /* Add an underline under the h1 */
   margin-bottom: 20px; /* Add margin to the bottom of the h1 */
   width: 30%; /* Adjust the width of the underline to 50% */
-  margin-left: 40%; /* Center the underline by adjusting the left margin */
+  margin-left: 20%; /* Center the underline by adjusting the left margin */
 }
 
 .list-items {
@@ -27,5 +27,6 @@ text-align: center; /* Center the content */
 }
 
 .list-items li {
+   margin-left: -200px;
     margin-bottom: 10px; /* Add margin to the bottom of each list item */
   }
