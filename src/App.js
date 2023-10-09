@@ -12,11 +12,7 @@ function App() {
   return (
     <div className="App">
       {/* <Footer /> */}
-      {/* <HomePage /> */}
-      {/* <ProductListingPage /> */}
-      {/* <ShoppingCartPage /> */}
-      {/* <Checkout /> */}
-      <ProductDetails />
+      <HomePage />
     </div>
   );
 }
