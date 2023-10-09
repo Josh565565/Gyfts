@@ -2,6 +2,7 @@ import React from "react";
 import productListing from "./ProductListing.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 // Image import start
 import ProductLandingPic from "../Assets/images/product-landing-pic.png";
@@ -72,19 +73,23 @@ function ProductListingPage() {
               <div className={productListing.TopPicksDiv}>
                 <div className={productListing.TopPicksItem1}>
                   <div className={productListing.TopPicksImgDiv}>
+                    <Link to="/productdetails">
                     <a href="#">
                       <img
                         className={productListing.TopPicksImg1}
                         src={ProductItem1}
                         alt=""
                       />
-                    </a>
+                    </a></Link>
+                    
                     <div className={productListing.productNameDiv}>
                       <div className={productListing.productNameDiv2}>
                         <a className={productListing.TopPicksName} href="#">
+                          <Link to="/productdetails">
                           <p className={productListing.productName}>
                             Special Wedding Hamper
-                          </p>
+                          </p></Link>
+                          
                           <div className={productListing.nairaDiv}>
                             <img
                               className={productListing.naira}

@@ -1,5 +1,12 @@
 // import logo from "./logo.svg";
 // import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import HomePage from "./Components/HomePage/HomePage";
@@ -13,17 +20,20 @@ import MobileDropDown from "./Components/Dropdown/MobileDropDown";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Footer /> */}
-      {/* <HomePage /> */}
-      {/* <ProductListingPage /> */}
-      {/* <ShoppingCartPage /> */}
-      {/* <Checkout /> */}
-      {/* <ProductDetails /> */}
-      {/* <GiftOccasionsDropdown /> */}
-      {/* <GiftBasket /> */}
-      <MobileDropDown />
-    </div>
+    <>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/productlisting" element={<ProductListingPage />} />
+        <Route path="/productdetails" element={<ProductDetails />} />
+        <Route path="/shoppingcart" element={<ShoppingCartPage />} />
+        <Route path="/checkout" element={<Checkout />} />
+        {/* Redirect to home page if no route matches */}
+        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="/news/:slug" element={<NewsViewPage />} /> */}
+      </Routes>
+    </Router>
+  </>
   );
 }
 

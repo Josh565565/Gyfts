@@ -1,7 +1,9 @@
 .con {
     background-color: #F9F9F9;
 }
-
+.headerDiv {
+    background-color: #F9F9F9;
+}
 .impDivMobile {
     display: none;
 }

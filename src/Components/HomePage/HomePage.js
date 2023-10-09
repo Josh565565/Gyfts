@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import homeStyle from "./HomePageStyle.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 // Images import start
 import LandingPic from "../Assets/images/landingPic.svg";
@@ -46,9 +47,10 @@ function HomePage() {
               Use the code BIRTHDAY10
             </p>
             <div className={homeStyle.button}>
+              <Link to="/productlisting">
               <a className={homeStyle.landingLink} href="#">
                 <img src={ShopCart} alt="" /> Shop Now
-              </a>
+              </a></Link>
             </div>
           </div>
           <div className={homeStyle.landingRight}>
@@ -64,7 +66,6 @@ function HomePage() {
             />
           </div>
         </div>
-
         {/* Partners start */}
         <div className={homeStyle.partnersDiv}>
           <img src={Partners} alt="" />

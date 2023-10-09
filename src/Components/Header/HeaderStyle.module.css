@@ -130,9 +130,16 @@ display: none;
 
 .menueOpenDiv {
   display: block;
+  position: relative;
 }
 .menueOpenImg {
   display: block;
+}
+.mobileDropDownDiv {
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  right: 0;
 }
 .searchIcon {
   /* Style your search icon image here */

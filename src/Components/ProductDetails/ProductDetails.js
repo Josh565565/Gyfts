@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import product from "./ProductDetails.module.css";
+import { Link } from "react-router-dom";
 
 // Images import start
 import BigImg1 from "../Assets/images/product-img1.png";
@@ -74,9 +75,12 @@ function ProductDetails() {
               </button>
             </div>
             <div className={product.addToCartDiv2}>
+              <Link to="/productlisting">
               <button className={product.addToCartBtn2}>
                 <p className={product.addToCart2}>Continue shopping</p>
               </button>
+              </Link>
+              
             </div>
           </div>
         </section>

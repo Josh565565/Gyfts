@@ -2,6 +2,7 @@ import React from "react";
 import cart from "./ShoppingCart.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 // Image Import start
 import Item1 from "../Assets/images/cart-item1.png";
@@ -172,11 +173,13 @@ function ShoppingCartPage() {
                 <p className={cart.subTotalAmount}>85,000</p>
               </div>
             </div>
-            <input
-              className={cart.proceedInput}
-              type="submit"
-              value="Proceed to Checkout"
-            />
+            <Link to="/checkout">
+              <input
+                className={cart.proceedInput}
+                type="submit"
+                value="Proceed to Checkout"
+              /></Link>
+
           </div>
           <div className={cart.impDivMobile}>
             <img className={cart.impImgIcon} src={Imp} alt="" />

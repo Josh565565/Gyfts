@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import headerStyle from "./HeaderStyle.module.css";
 import GiftBasket from "../Dropdown/GiftBasket";
 import GiftOccasionsDropdown from "../Dropdown/GiftOccasionsDropdown";
+import MobileDropDown from "../Dropdown/MobileDropDown";
 
 import cart from "../Assets/cart.png";
 import search from "../Assets/search-icon.png";
@@ -15,19 +17,25 @@ function Header() {
   // Gift Occasions Drop Down start
   const [occasionsOpen, setoccasionsOpen] = useState(false);
   const toggleoccasions = () => setoccasionsOpen(!occasionsOpen);
+
+  // Gift Occasions Drop Down start
+  const [mobileOpen, setmobileOpen] = useState(false);
+  const togglemobile = () => setmobileOpen(!mobileOpen);
   return (
     <div className={headerStyle.landingPageHeaderContainer}>
       <header className={headerStyle.landingPageHeader}>
         <div className={headerStyle.leftSection}>
           <a href="">
-            <div className={headerStyle.logo}>Gyfts</div>
+            <Link to="/"><div className={headerStyle.logo}>Gyfts</div></Link>
           </a>
           <nav>
             <ul className={headerStyle.ul}>
               <li>
+                <Link to="/">
                 <a className={headerStyle.link} href="#">
                   Home
-                </a>
+                </a></Link>
+                
               </li>
               <li className={headerStyle.basketCon}>
                 <a onClick={toggleBasket} className={headerStyle.link} href="#">
@@ -55,7 +63,7 @@ function Header() {
         <div className={headerStyle.rightSection}>
           <div className={headerStyle.cartSection}>
             <div className={headerStyle.cartIcon}>
-              <img src={cart} alt="cart" />
+             <Link to="/shoppingcart"><img src={cart} alt="cart" /></Link>
             </div>
             <div className={headerStyle.cartLabel}></div>
           </div>
@@ -72,7 +80,10 @@ function Header() {
             />
           </div>
           <div className={headerStyle.menueOpenDiv}>
-            <img className={headerStyle.menueOpenImg} src={menuOpen} alt="" />
+            <img onClick={togglemobile} className={headerStyle.menueOpenImg} src={menuOpen} alt="" />
+            <div className={headerStyle.mobileDropDownDiv}>
+                  {mobileOpen && <MobileDropDown />}
+                </div>
           </div>
         </div>
       </header>
