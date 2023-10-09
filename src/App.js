@@ -7,11 +7,16 @@ import ProductListingPage from "./Components/ProductListingPage/ProductListingPa
 import ShoppingCartPage from "./Components/ShoppingCartPage/ShoppingCartPage";
 import Checkout from "./Components/CheckoutPage/Checkout";
 import ProductDetails from "./Components/ProductDetails/ProductDetails";
+import GiftOccasionsDropdown from "./Components/Dropdown/GiftOccasionsDropdown";
+import GiftBasket from "./Components/Dropdown/GiftBasket";
 
 function App() {
   return (
     <div className="App">
       {/* <Footer /> */}
+      <HomePage />
+      <HomePage />
+      <HomePage />
       <HomePage />
     </div>
   );
