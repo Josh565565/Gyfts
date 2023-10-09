@@ -54,38 +54,60 @@
   margin: 8px ;
 }
 
+/* GiftOccasionsDropdown.module.css */
+
+/* Your existing styles for laptop view */
+
+/* For mobile view */
+/* Your existing styles for laptop view */
+
+/* For mobile view */
+/* Your existing styles for laptop view */
+
+/* For mobile view */
+/* Your existing styles for laptop view */
 
 /* For mobile view */
 @media (max-width: 768px) {
   .dropdownContainer {
-    width: 80%; /* Adjust the width for smaller screens */
-    height: auto; /* Remove fixed height */
-    margin: 5% auto; /* Center the dropdown vertically */
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column; /* Display sections vertically */
+    align-items: center; /* Center the sections horizontally */
   }
 
   .dropdownSection {
-    flex: 1;
-    text-align: center;
-    position: relative;
-    padding: 0 10px;
+    text-align: left;
+    width: 100%; /* Ensure sections take full width */
   }
 
   .sectionHeading {
     position: relative;
-    z-index: 1;
-    margin-top: 20px;
-    margin-bottom: 5px; /* Reduce margin for smaller screens */
-    color: #52489c;
-    font-size: 18px; /* Adjust font size for smaller screens */
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
   }
 
   .dropdownList {
     list-style: none;
     padding: 0;
     color: #46435b;
+    display: none;
   }
 
   .dropdownList li {
-    margin: 6px; /* Adjust margin for smaller screens */
+    margin: 8px;
+  }
+
+  /* Show the dropdown list when the section is active */
+  .active .dropdownList {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #46435b;
+    border-radius: 5px;
+    z-index: 1;
   }
 }
