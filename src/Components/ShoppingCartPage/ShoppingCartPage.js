@@ -21,6 +21,7 @@ import NairaSubtotal from "../Assets/images/subtotal-naira.svg";
 
 function ShoppingCartPage() {
   const { isEmpty, totalUniqueItems, items, totalItems, updateItemQuantity, removeItem, emptyCart, } = useCart();
+  if(isEmpty) return <h3>No Item added</h3>
 
 
   // Define cartItems using the useState hook
