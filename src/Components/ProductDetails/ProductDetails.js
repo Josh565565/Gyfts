@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import product from "./ProductDetails.module.css";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 // Images import start
 import BigImg1 from "../Assets/images/product-img1.png";
@@ -19,8 +20,54 @@ import MoreItem3 from "../Assets/images/more-item-3.png";
 import Naira from "../Assets/images/more-naira.svg";
 import Back from "../Assets/images/more-back-arrow.svg";
 import Front from "../Assets/images/more-front-arrow.svg";
+import BeautyGiftBasket from "../Assets/images/Beauty-Gift-Basket.png";
 
+const items = [
+  {
+    id: 1,
+    name: "For the Groom Classic",
+    price: 45000,
+    description:
+      "Our Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+    images: [BigImg1, Item2, Item3, Item4],
+    rating: 4.0,
+    reviews: 10,
+    relatedItems: [
+      {
+        id: 2,
+        name: "Special Wedding Hamper",
+        price: 30000,
+        image: MoreItem1,
+      },
+      {
+        id: 3,
+        name: "Beauty Gift Basket",
+        price: 25000,
+        image: MoreItem2,
+      },
+      // Add more related items as needed
+    ],
+  },
+  {
+    id: 2,
+    name: "Beauty Gift Basket",
+    image: BeautyGiftBasket,
+    price: "25,000",
+    description:
+      "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+    images: [BigImg1, Item2, Item3, Item4],
+    rating: 4.0,
+    reviews: 20,
+  },
+];
 function ProductDetails() {
+  const { itemId } = useParams();
+  const item = items.find((item) => item.id === parseInt(itemId));
+
+  if (!item) {
+    // Handle item not found
+    return <div>Item not found</div>;
+  }
   return (
     <div className={product.container}>
       <div>
@@ -50,10 +97,10 @@ function ProductDetails() {
           </div>
           <div className={product.section1Div2Mobile}>
             <div className={product.section1Div2}>
-              <h2 className={product.section1header}>For the Groom Classic</h2>
+              <h2 className={product.section1header}>{item.name}</h2>
               <div className={product.starDiv}>
                 <img className={product.starImgMobile} src={Star} alt="" />
-                <p className={product.reviews}>10 reviews</p>
+                <p className={product.reviews}>{item.reviews} reviews</p>
               </div>
               <div className={product.nairaDiv1}>
                 <img
@@ -61,7 +108,7 @@ function ProductDetails() {
                   src={NairaIcon}
                   alt=""
                 />
-                <p className={product.amount1}>45,000</p>
+                <p className={product.amount1}>{item.price}</p>
               </div>
               <div className={product.itemDiv}>
                 <img src={Dot} alt="" />
@@ -76,11 +123,10 @@ function ProductDetails() {
             </div>
             <div className={product.addToCartDiv2}>
               <Link to="/productlisting">
-              <button className={product.addToCartBtn2}>
-                <p className={product.addToCart2}>Continue shopping</p>
-              </button>
+                <button className={product.addToCartBtn2}>
+                  <p className={product.addToCart2}>Continue shopping</p>
+                </button>
               </Link>
-              
             </div>
           </div>
         </section>

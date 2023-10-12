@@ -29,7 +29,75 @@ import LandingPicMobile from "../Assets/images/landing-pic-mobile.svg";
 import PartnersMobile from "../Assets/images/partner-mobile.png";
 import BrandNewMobile from "../Assets/images/brand-new-pic-mobile.png";
 
+import BigImg1 from "../Assets/images/product-img1.png";
+import Item2 from "../Assets/images/product-img2.svg";
+import Item3 from "../Assets/images/product-img3.svg";
+import Item4 from "../Assets/images/product-img4.svg";
+import MoreItem1 from "../Assets/images/more-item-1.png";
+import MoreItem2 from "../Assets/images/more-item-2.png";
+import MoreItem3 from "../Assets/images/more-item-3.png";
+
 function HomePage() {
+  // Define an array of top pick items
+  const topPicks = [
+    {
+      id: 1,
+      name: "For the Groom Classic",
+      price: 45000,
+      description:
+        "Our Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      images: [BigImg1, Item2, Item3, Item4],
+      rating: 4.0,
+      reviews: 10,
+      relatedItems: [
+        {
+          id: 2,
+          name: "Special Wedding Hamper",
+          price: 30000,
+          image: MoreItem1,
+        },
+        {
+          id: 3,
+          name: "Beauty Gift Basket",
+          price: 25000,
+          image: MoreItem2,
+        },
+        // Add more related items as needed
+      ],
+    },
+    {
+      id: 2,
+      name: "Beauty Gift Basket",
+      image: BeautyGiftBasket,
+      price: "25,000",
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      images: [BigImg1, Item2, Item3, Item4],
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      name: "Gift for Her",
+      image: GiftForHer,
+      price: "15,000",
+    },
+    {
+      name: "Luxury Food Basket",
+      image: LuxuryFoodBasket,
+      price: "60,000",
+    },
+    {
+      name: "New Born baby Gift Basket",
+      image: NewBornBabyGiftBasket,
+      price: "20,000",
+    },
+    {
+      name: "Men’s Grooming Basket",
+      image: MensGroomingBasket,
+      price: "15,000",
+    },
+  ];
+
   return (
     <div className={homeStyle.container}>
       <div>
@@ -48,9 +116,10 @@ function HomePage() {
             </p>
             <div className={homeStyle.button}>
               <Link to="/productlisting">
-              <a className={homeStyle.landingLink} href="#">
-                <img src={ShopCart} alt="" /> Shop Now
-              </a></Link>
+                <a className={homeStyle.landingLink} href="#">
+                  <img src={ShopCart} alt="" /> Shop Now
+                </a>
+              </Link>
             </div>
           </div>
           <div className={homeStyle.landingRight}>
@@ -74,7 +143,6 @@ function HomePage() {
           <img src={PartnersMobile} alt="" />
         </div>
         {/* Partners end */}
-
         {/* Track Service start */}
         <div className={homeStyle.trackServiceDivMobile}>
           <div className={homeStyle.trackServiceDiv}>
@@ -255,216 +323,44 @@ function HomePage() {
         <div className={homeStyle.TopPicksDiv}>
           <div className={homeStyle.TopPicksDivMobile}>
             <h3 className={homeStyle.TopPicksHeader}>Top Picks</h3>
-
             <div className={homeStyle.TopPicksDiv1}>
-              {/* Top Pick box 1 start */}
-              <div className={homeStyle.TopPicksDiv}>
-                <div className={homeStyle.TopPicksItem1}>
-                  <div className={homeStyle.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={homeStyle.TopPicksImg1}
-                        src={SpecialWeddingHamper}
-                        alt=""
-                      />
-                    </a>
-                    <div className={homeStyle.productNameDiv}>
-                      <div className={homeStyle.productNameDiv2}>
-                        <a className={homeStyle.TopPicksName} href="#">
-                          <p className={homeStyle.productName}>
-                            Special Wedding Hamper
-                          </p>
-                          <div className={homeStyle.nairaDiv}>
-                            <img
-                              className={homeStyle.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={homeStyle.amount}>30,000</p>
-                          </div>
-                        </a>
-                        <button className={homeStyle.TopPicksBtn} type="submit">
-                          Add to cart
-                        </button>
+              {topPicks.map((item) => (
+                <div className={homeStyle.TopPicksDiv} key={item.id}>
+                  <div className={homeStyle.TopPicksItem1}>
+                    <div className={homeStyle.TopPicksImgDiv}>
+                      {/* Add Link to the product details page */}
+                      <Link to={`/items/${item.id}`}>
+                        <img
+                          className={homeStyle.TopPicksImg1}
+                          src={item.image}
+                          alt=""
+                        />
+                      </Link>
+                      <div className={homeStyle.productNameDiv}>
+                        <div className={homeStyle.productNameDiv2}>
+                          <a className={homeStyle.TopPicksName} href="#">
+                            <p className={homeStyle.productName}>{item.name}</p>
+                            <div className={homeStyle.nairaDiv}>
+                              <img
+                                className={homeStyle.naira}
+                                src={Naira}
+                                alt=""
+                              />
+                              <p className={homeStyle.amount}>{item.price}</p>
+                            </div>
+                          </a>
+                          <button
+                            className={homeStyle.TopPicksBtn}
+                            type="submit"
+                          >
+                            Add to cart
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              {/* Top Pick box 1 end */}
-              {/* Top Pick box 2 start */}
-              <div className={homeStyle.TopPicksDiv}>
-                <div className={homeStyle.TopPicksItem1}>
-                  <div className={homeStyle.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={homeStyle.TopPicksImg1}
-                        src={BeautyGiftBasket}
-                        alt=""
-                      />
-                    </a>
-                    <div className={homeStyle.productNameDiv}>
-                      <div className={homeStyle.productNameDiv2}>
-                        <a className={homeStyle.TopPicksName} href="#">
-                          <p className={homeStyle.productName}>
-                            Beauty Gift Basket
-                          </p>
-                          <div className={homeStyle.nairaDiv}>
-                            <img
-                              className={homeStyle.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={homeStyle.amount}>25,000</p>
-                          </div>
-                        </a>
-                        <button className={homeStyle.TopPicksBtn} type="submit">
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 2 end */}
-              {/* Top Pick box 3 start */}
-              <div className={homeStyle.TopPicksDiv}>
-                <div className={homeStyle.TopPicksItem1}>
-                  <div className={homeStyle.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={homeStyle.TopPicksImg1}
-                        src={GiftForHer}
-                        alt=""
-                      />
-                    </a>
-                    <div className={homeStyle.productNameDiv}>
-                      <div className={homeStyle.productNameDiv2}>
-                        <a className={homeStyle.TopPicksName} href="#">
-                          <p className={homeStyle.productName}>Gift for Her</p>
-                          <div className={homeStyle.nairaDiv}>
-                            <img
-                              className={homeStyle.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={homeStyle.amount}>15,000</p>
-                          </div>
-                        </a>
-                        <button className={homeStyle.TopPicksBtn} type="submit">
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 3 end */}
-              {/* Top Pick box 4 start */}
-              <div className={homeStyle.TopPicksDiv}>
-                <div className={homeStyle.TopPicksItem1}>
-                  <div className={homeStyle.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={homeStyle.TopPicksImg1}
-                        src={LuxuryFoodBasket}
-                        alt=""
-                      />
-                    </a>
-                    <div className={homeStyle.productNameDiv}>
-                      <div className={homeStyle.productNameDiv2}>
-                        <a className={homeStyle.TopPicksName} href="#">
-                          <p className={homeStyle.productName}>
-                            Luxury Food Basket
-                          </p>
-                          <div className={homeStyle.nairaDiv}>
-                            <img
-                              className={homeStyle.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={homeStyle.amount}>60,000</p>
-                          </div>
-                        </a>
-                        <button className={homeStyle.TopPicksBtn} type="submit">
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 4 end */}
-              {/* Top Pick box 5 start */}
-              <div className={homeStyle.TopPicksDiv}>
-                <div className={homeStyle.TopPicksItem1}>
-                  <div className={homeStyle.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={homeStyle.TopPicksImg1}
-                        src={NewBornBabyGiftBasket}
-                        alt=""
-                      />
-                    </a>
-                    <div className={homeStyle.productNameDiv}>
-                      <div className={homeStyle.productNameDiv2}>
-                        <a className={homeStyle.TopPicksName} href="#">
-                          <p className={homeStyle.productName}>
-                            New Born baby Gift Basket
-                          </p>
-                          <div className={homeStyle.nairaDiv}>
-                            <img
-                              className={homeStyle.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={homeStyle.amount}>20,000</p>
-                          </div>
-                        </a>
-                        <button className={homeStyle.TopPicksBtn} type="submit">
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 5 end */}
-              {/* Top Pick box 6 start */}
-              <div className={homeStyle.TopPicksDiv}>
-                <div className={homeStyle.TopPicksItem1}>
-                  <div className={homeStyle.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={homeStyle.TopPicksImg1}
-                        src={MensGroomingBasket}
-                        alt=""
-                      />
-                    </a>
-                    <div className={homeStyle.productNameDiv}>
-                      <div className={homeStyle.productNameDiv2}>
-                        <a className={homeStyle.TopPicksName} href="#">
-                          <p className={homeStyle.productName}>
-                            Men’s Grooming Basket
-                          </p>
-                          <div className={homeStyle.nairaDiv}>
-                            <img
-                              className={homeStyle.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={homeStyle.amount}>15,000</p>
-                          </div>
-                        </a>
-                        <button className={homeStyle.TopPicksBtn} type="submit">
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 6 end */}
+              ))}
             </div>
           </div>
         </div>
