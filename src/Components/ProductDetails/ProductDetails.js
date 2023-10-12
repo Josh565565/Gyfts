@@ -29,7 +29,7 @@ const items = [
     price: 45000,
     description:
       "Our Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
-    images: [BigImg1, Item2, Item3, Item4],
+    image: BigImg1,
     rating: 4.0,
     reviews: 10,
     relatedItems: [
@@ -78,7 +78,7 @@ function ProductDetails() {
         <section className={product.section1}>
           <div className={product.section1Div1}>
             <div className={product.img1Div}>
-              <img className={product.item1IMG} src={BigImg1} alt="" />
+              <img className={product.item1IMG} src={item.image} alt="" />
             </div>
             <div className={product.itemSmallImgDiv}>
               <div className={product.item1PicDiv}>

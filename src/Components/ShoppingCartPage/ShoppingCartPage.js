@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import cart from "./ShoppingCart.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../CartContext";
+import { useCart } from "react-use-cart";
+
 
 // Image Import start
 import Item1 from "../Assets/images/cart-item1.png";
@@ -17,6 +20,27 @@ import NairaTotal from "../Assets/images/cart-naira.svg";
 import NairaSubtotal from "../Assets/images/subtotal-naira.svg";
 
 function ShoppingCartPage() {
+  const { isEmpty, totalUniqueItems, items, totalItems, updateItemQuantity, removeItem, emptyCart, } = useCart();
+
+
+  // Define cartItems using the useState hook
+  const [cartItems, setCartItems] = useState([
+
+    {
+      id: 1,
+      image: Item1,
+      name: "For the Groom Classic",
+      price: "45,000",
+      quantity: 1,
+    },
+    {
+      id: 2,
+      name: "Beauty Gift Basket",
+      image: Item2,
+      price: "25,000",
+      quantity: 2,
+    },
+  ]);
   return (
     <div className={cart.con}>
       <div className={cart.headerDiv}>
@@ -35,99 +59,41 @@ function ShoppingCartPage() {
                 <p className={cart.textPrice}>Price</p>
               </div>
             </div>
-            {/* Item 1 start */}
-            <div className={cart.itemDiv}>
-              <div className={cart.itemImageDiv}>
-                <img className={cart.itemImg} src={Item1} alt="" />
-                <p className={cart.itemImageDivPara}>For the Groom Classic</p>
-              </div>
-              <div className={cart.plusMinusAmountDiv}>
-                <div className={cart.plusMinusDiv}>
-                  <div className={cart.plusDiv}>
-                    <img src={Plus} alt="" />
-                  </div>
-                  <div className={cart.oneDiv}>
-                    <p>1</p>
-                  </div>
-                  <div className={cart.plusDiv}>
-                    <img src={Minus} alt="" />
-                  </div>
+            {/* Map through the cartItems and render each one */}
+            {console.warn(items)}
+            {cartItems.map((item, index) => (
+              <div className={cart.itemDiv} key={item.id}>
+                {console.warn(items)}
+                <div className={cart.itemImageDiv}>
+                  <img className={cart.itemImg} src={item.image} alt="" />
+                  <p className={cart.itemImageDivPara}>{item.name}</p>
                 </div>
-                <div className={cart.amountRemoveDiv}>
-                  {/* <div className={cart.cancelDiv }>
-                    <img className={cart.removeImg} src={Cancel} alt="" />
-                  </div> */}
-                  <div className={cart.amountDiv}>
-                    <img className={cart.nairaIcon} src={Naira} alt="" />
-                    <p className={cart.amountp}>45,000</p>
+                <div className={cart.plusMinusAmountDiv}>
+                  <div className={cart.plusMinusDiv}>
+                    <div className={cart.plusDiv}>
+                      <img src={Plus} alt="" />
+                    </div>
+                    <div className={cart.oneDiv}>
+                      <p>{item.quantity}</p>
+                    </div>
+                    <div className={cart.plusDiv}>
+                      <img src={Minus} alt="" />
+                    </div>
                   </div>
-                  <div className={cart.cancelDiv}>
-                    <img className={cart.removeImg} src={Cancel} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Item 1 end */}
-            {/* Item 2 start */}
-            <div className={cart.itemDiv}>
-              <div className={cart.itemImageDiv}>
-                <img className={cart.itemImg} src={Item2} alt="" />
-                <p className={cart.itemImageDivPara}>Men’s Grooming Basket</p>
-              </div>
-              <div className={cart.plusMinusAmountDiv}>
-                <div className={cart.plusMinusDiv}>
-                  <div className={cart.plusDiv}>
-                    <img src={Plus} alt="" />
-                  </div>
-                  <div className={cart.oneDiv}>
-                    <p>1</p>
-                  </div>
-                  <div className={cart.plusDiv}>
-                    <img src={Minus} alt="" />
-                  </div>
-                </div>
-                <div className={cart.amountRemoveDiv}>
-                  <div className={cart.amountDiv}>
-                    <img src={Naira} alt="" />
-                    <p className={cart.amountp}>15,000</p>
-                  </div>
-                  <div className={cart.cancelDiv}>
-                    <img className={cart.removeImg} src={Cancel} alt="" />
+                  <div className={cart.amountRemoveDiv}>
+                    <div className={cart.amountDiv}>
+                      <img className={cart.nairaIcon} src={Naira} alt="" />
+                      <p className={cart.amountp}>{item.price}</p>
+                    </div>
+                    <div className={cart.cancelDiv}>
+                      <img className={cart.removeImg} src={Cancel} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            {/* Item 2 end */}
-            {/* Item 3 start */}
-            <div className={cart.itemDiv}>
-              <div className={cart.itemImageDiv}>
-                <img className={cart.itemImg} src={Item3} alt="" />
-                <p className={cart.itemImageDivPara}>Beauty Gift Basket</p>
-              </div>
-              <div className={cart.plusMinusAmountDiv}>
-                <div className={cart.plusMinusDiv}>
-                  <div className={cart.plusDiv}>
-                    <img src={Plus} alt="" />
-                  </div>
-                  <div className={cart.oneDiv}>
-                    <p>1</p>
-                  </div>
-                  <div className={cart.plusDiv}>
-                    <img src={Minus} alt="" />
-                  </div>
-                </div>
-                <div className={cart.amountRemoveDiv}>
-                  <div className={cart.amountDiv}>
-                    <img src={Naira} alt="" />
-                    <p className={cart.amountp}>25,000</p>
-                  </div>
-                  <div className={cart.cancelDiv}>
-                    <img className={cart.removeImg} src={Cancel} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Item 3 end */}
+            ))}
+            {/* End of mapped cart items */}
+            
             {/* Total amount start */}
             <div className={cart.totalDiv}>
               <p className={cart.totalp}>Total</p>

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import homeStyle from "./HomePageStyle.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../CartContext";
+import { useCart } from "react-use-cart";
 
 // Images import start
 import LandingPic from "../Assets/images/landingPic.svg";
@@ -38,6 +40,22 @@ import MoreItem2 from "../Assets/images/more-item-2.png";
 import MoreItem3 from "../Assets/images/more-item-3.png";
 
 function HomePage() {
+  const { addItem } = useCart();
+
+
+
+  // const { cartDispatch } = useContext(CartContext);
+
+  // const addToCart = (item) => {
+  //   cartDispatch({ type: "ADD_TO_CART", payload: item });
+  //   console.log("Item added to cart:", item);
+  // };
+  // const handleAddToCart = (item) => {
+  //   addToCart(item);
+
+
+  //   console.log("Item added to cart:", item);
+  // }
   // Define an array of top pick items
   const topPicks = [
     {
@@ -46,7 +64,7 @@ function HomePage() {
       price: 45000,
       description:
         "Our Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
-      images: [BigImg1, Item2, Item3, Item4],
+      image: BigImg1,
       rating: 4.0,
       reviews: 10,
       relatedItems: [
@@ -77,24 +95,44 @@ function HomePage() {
       reviews: 20,
     },
     {
+      id: 3,
       name: "Gift for Her",
       image: GiftForHer,
       price: "15,000",
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
     },
     {
+      id: 4,
       name: "Luxury Food Basket",
       image: LuxuryFoodBasket,
       price: "60,000",
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
     },
     {
+      id: 5,
       name: "New Born baby Gift Basket",
       image: NewBornBabyGiftBasket,
       price: "20,000",
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
     },
     {
+      id: 6,
       name: "Men’s Grooming Basket",
       image: MensGroomingBasket,
       price: "15,000",
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
     },
   ];
 
@@ -324,8 +362,9 @@ function HomePage() {
           <div className={homeStyle.TopPicksDivMobile}>
             <h3 className={homeStyle.TopPicksHeader}>Top Picks</h3>
             <div className={homeStyle.TopPicksDiv1}>
-              {topPicks.map((item) => (
-                <div className={homeStyle.TopPicksDiv} key={item.id}>
+              {topPicks.map((item, index) => {
+                return (
+                <div className={homeStyle.TopPicksDiv} key={index}>
                   <div className={homeStyle.TopPicksItem1}>
                     <div className={homeStyle.TopPicksImgDiv}>
                       {/* Add Link to the product details page */}
@@ -352,6 +391,7 @@ function HomePage() {
                           <button
                             className={homeStyle.TopPicksBtn}
                             type="submit"
+                            onClick={() =>addItem(item)}
                           >
                             Add to cart
                           </button>
@@ -360,7 +400,8 @@ function HomePage() {
                     </div>
                   </div>
                 </div>
-              ))}
+                )
+              })}
             </div>
           </div>
         </div>

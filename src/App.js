@@ -6,6 +6,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { CartProvider } from "react-use-cart";
 
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
