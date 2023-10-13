@@ -1,41 +1,44 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 /* Hidden styles start */
 .menuOpenImg {
-display: none;
+  display: none;
 }
+
 .menueOpenImg {
-display: none;
+  display: none;
 }
+
 /* Hidden styles end */
 
 /* Style for the entire header */
 .landingPageHeader {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    padding: 28px 100px 0 100px;
-    /* background-color: #F9F9F9; */
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
-  }
-  
-  /* Style for the left section (logo and navigation) */
-  .leftSection {
-    display: flex;
-    align-items: center;
-    /* margin-left: 10%; */
-  }
-  
-  .logo {
-    color: #52489C;
-    font-family: League Spartan;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 28px 100px 0 100px;
+  /* background-color: #F9F9F9; */
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style for the left section (logo and navigation) */
+.leftSection {
+  display: flex;
+  align-items: center;
+  /* margin-left: 10%; */
+}
+
+.logo {
+  color: #52489C;
+  font-family: League Spartan;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
 
 }
 
@@ -48,31 +51,37 @@ display: none;
 
 .link {
   text-decoration: none;
-   color: #46435b;/* Text color for navigation links */
+  color: #46435b;
+  /* Text color for navigation links */
   font-weight: 400px;
   font-size: 18px;
 }
+
 .basketCon {
   position: relative;
   /* padding-bottom: 20px; */
 }
+
 .basketDropDownDiv {
   position: absolute;
   /* top: 0; */
   left: 0;
 }
+
 .occasionsCon {
   position: relative;
   /* padding-bottom: 20px; */
 }
+
 .occasionsDropDownDiv {
   position: absolute;
   /* top: 0; */
   left: 0;
 }
+
 .link:hover {
-   color: #52489C;
-   font-weight: 600;
+  color: #52489C;
+  font-weight: 600;
 }
 
 /* Style for the right section (cart icon and search input) */
@@ -85,11 +94,41 @@ display: none;
   display: flex;
   align-items: center;
 }
+.cartIcon {
+  position: relative;
+}
+.cartupdateDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -5px -5px 0 0;
+  background-color: #52489C;
+  width: 70%;
+  /* width: 16px; */
+  /* height: 16px; */
+  height: 70%;
+  border-radius: 50px;
+  border: none;
+}
+.cartupdate {
+  text-align: center;
+  width: 70%;
+  height: 70%;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  margin-top: -2px;
+}
+
 .searchInput {
   margin-left: 20px;
   display: flex;
   align-items: center;
-  position: relative; /* Position relative for positioning the search icon */
+  position: relative;
+  /* Position relative for positioning the search icon */
 }
 
 .searchIcon {
@@ -98,7 +137,8 @@ display: none;
   height: 20px;
   position: absolute;
   top: 50%;
-  left: 10px; /* Adjust the left position of the search icon */
+  left: 10px;
+  /* Adjust the left position of the search icon */
   transform: translateY(-50%);
 }
 
@@ -114,43 +154,50 @@ display: none;
 
 /* Mobile style start */
 @media (max-width: 1270px) {
-.landingPageHeader {
-  /* display: flex; */
-  justify-content: space-between;
-  /* align-items: center; */
-  padding: 28px 30px 0 30px;
+  .landingPageHeader {
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 28px 30px 0 30px;
 
-}
-.ul {
-  display: none;
-}
-.searchTextInput {
-  display: none;
-}
+  }
 
-.menuOpenImg {
-  display: block;
-  position: relative;
-}
-.menueOpenImg {
-  display: block;
-}
-.mobileDropDownDiv {
-  position: absolute;
-  /* top: 0; */
-  /* left: 0; */
-  right: 0;
-}
-.searchIcon {
-  /* Style your search icon image here */
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  left: -100px; /* Adjust the left position of the search icon */
-  transform: translateY(-50%);
-}
-.cartIcon {
-  margin-right: 10px;
-}
+  .ul {
+    display: none;
+  }
+
+  .searchTextInput {
+    display: none;
+  }
+
+  .menuOpenImg {
+    display: block;
+    position: relative;
+  }
+
+  .menueOpenImg {
+    display: block;
+  }
+
+  .mobileDropDownDiv {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    right: 0;
+  }
+
+  .searchIcon {
+    /* Style your search icon image here */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    /* Adjust the left position of the search icon */
+    transform: translateY(-50%);
+  }
+
+  .cartIcon {
+    margin-right: 10px;
+  }
 }

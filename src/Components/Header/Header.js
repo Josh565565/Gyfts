@@ -4,6 +4,7 @@ import headerStyle from "./HeaderStyle.module.css";
 import GiftBasket from "../Dropdown/GiftBasket";
 import GiftOccasionsDropdown from "../Dropdown/GiftOccasionsDropdown";
 import MobileDropDown from "../Dropdown/MobileDropDown";
+import { useCart } from "react-use-cart";
 
 import cart from "../Assets/cart.png";
 import search from "../Assets/search-icon.png";
@@ -11,6 +12,8 @@ import menuOpen from "../Assets/images/menu-icon-open.png";
 import CloseMenu from "../Assets/images/close-menu.svg";
 
 function Header() {
+  const { totalItems, cartTotal } = useCart();
+
   // Basket dropdown start
   const [basketOpen, setBasketOpen] = useState(false);
   const toggleBasket = () => setBasketOpen(!basketOpen);
@@ -114,6 +117,9 @@ function Header() {
             <div className={headerStyle.cartIcon}>
               <Link to="/shoppingcart">
                 <img src={cart} alt="cart" />
+                <div className={headerStyle.cartupdateDiv}>
+                  <p className={headerStyle.cartupdate}>{totalItems}</p>
+                </div>
               </Link>
             </div>
             <div className={headerStyle.cartLabel}></div>

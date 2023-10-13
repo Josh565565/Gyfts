@@ -41,19 +41,19 @@ import MoreItem3 from "../Assets/images/more-item-3.png";
 
 function HomePage() {
   const { addItem } = useCart();
+  const [isAddedToCart, setAddedToCart] = useState(false);
 
-  // const { cartDispatch } = useContext(CartContext);
+  const handleAddToCart = (item) => {
+    addItem(item);
+    setAddedToCart(true);
 
-  // const addToCart = (item) => {
-  //   cartDispatch({ type: "ADD_TO_CART", payload: item });
-  //   console.log("Item added to cart:", item);
-  // };
-  // const handleAddToCart = (item) => {
-  //   addToCart(item);
+    // Hide the pop-up after 3 seconds
+    setTimeout(() => {
+      setAddedToCart(false);
+    }, 3000);
+  };
 
-  //   console.log("Item added to cart:", item);
-  // }
-  // Define an array of top pick items
+  // Top Item list
   const topPicks = [
     {
       id: 1,
@@ -344,6 +344,13 @@ function HomePage() {
           <div className={homeStyle.TopPicksDivMobile}>
             <h3 className={homeStyle.TopPicksHeader}>Top Picks</h3>
             <div className={homeStyle.TopPicksDiv1}>
+              {/* Added to cart pop-up start */}
+              {isAddedToCart && (
+                <div className={homeStyle.addedToCartPopup}>
+                  Added to cart successfully!
+                </div>
+              )}
+              {/* Added to cart pop-up end */}
               {topPicks.map((item, index) => {
                 return (
                   <div className={homeStyle.TopPicksDiv} key={index}>
@@ -375,7 +382,16 @@ function HomePage() {
                             <button
                               className={homeStyle.TopPicksBtn}
                               type="submit"
-                              onClick={() => addItem(item)}
+                              // onClick={() => addItem(item)}
+                              onClick={(event) => {
+                                // Execute the existing onClick handler (if there is one)
+                                if (event.onClick) {
+                                  event.onClick();
+                                }
+
+                                // Add your new onClick functionality here
+                                handleAddToCart(item);
+                              }}
                             >
                               Add to cart
                             </button>

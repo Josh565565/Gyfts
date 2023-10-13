@@ -3,7 +3,18 @@
     display: none;
 }
 /* 
-
+/* added to cart pop up style start */
+.addedToCartPopup {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+/* added to cart pop up style end */
 /* Mobile hidden end */
 .homeStyle {
     display: flex;

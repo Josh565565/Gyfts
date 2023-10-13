@@ -92,11 +92,11 @@ function ShoppingCartPage() {
                     <div className={cart.amountDiv}>
                       <img className={cart.nairaIcon} src={Naira} alt="" />
                       <p className={cart.amountp}>
-                        {/* {item.price * item.quantity} */}
-                        {typeof item.price === "string"
+                        {(typeof item.price === "string"
                           ? parseFloat(item.price.replace(/,/g, "")) *
                             item.quantity
-                          : item.price * item.quantity}
+                          : item.price * item.quantity
+                        ).toLocaleString()}
                       </p>
                     </div>
                     <div className={cart.cancelDiv}>
@@ -118,7 +118,7 @@ function ShoppingCartPage() {
               <p className={cart.totalp}>Total</p>
               <div className={cart.totalAmountDiv}>
                 <img className={cart.totalNairaImg} src={NairaTotal} alt="" />
-                <p className={cart.totalAmount}>{cartTotal}</p>
+                <p className={cart.totalAmount}>{cartTotal.toLocaleString()}</p>
               </div>
             </div>
             {/* Total amount end */}
@@ -135,7 +135,9 @@ function ShoppingCartPage() {
               <p className={cart.subtotalP}>Subtotal</p>
               <div className={cart.subtotalAmountDiv}>
                 <img src={NairaSubtotal} alt="" />
-                <p className={cart.subtotalAmount}>{cartTotal}</p>
+                <p className={cart.subtotalAmount}>
+                  {cartTotal.toLocaleString()}
+                </p>
               </div>
             </div>
             <div className={cart.subTotalDiv}>
@@ -155,7 +157,9 @@ function ShoppingCartPage() {
               <p className={cart.subtotalP}>Total</p>
               <div className={cart.subtotalAmountDiv}>
                 <img src={Naira} alt="" />
-                <p className={cart.subTotalAmount}>{cartTotal}</p>
+                <p className={cart.subTotalAmount}>
+                  {cartTotal.toLocaleString()}
+                </p>
               </div>
             </div>
             <Link to="/checkout">

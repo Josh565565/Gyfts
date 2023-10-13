@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import productListing from "./ProductListing.module.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { useCart } from "react-use-cart";
 
 // Image import start
 import ProductLandingPic from "../Assets/images/product-landing-pic.png";
@@ -19,6 +20,112 @@ import ProductItem9 from "../Assets/images/product-item9.png";
 import Naira from "../Assets/images/naira.png";
 
 function ProductListingPage() {
+  const { addItem } = useCart();
+  const [isAddedToCart, setAddedToCart] = useState(false);
+
+  const handleAddToCart = (item) => {
+    addItem(item);
+    setAddedToCart(true);
+
+    // Hide the pop-up after 3 seconds
+    setTimeout(() => {
+      setAddedToCart(false);
+    }, 3000);
+  };
+
+  const topPicks = [
+    {
+      id: 1,
+      name: "Special Wedding Hamper",
+      price: 30000,
+      description:
+        "Our Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      image: ProductItem1,
+      rating: 4.0,
+      reviews: 10,
+    },
+    {
+      id: 2,
+      name: "Premium Wedding Hamper",
+      image: ProductItem2,
+      price: 45000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      // images: [BigImg1, Item2, Item3, Item4],
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 3,
+      name: "For the Bride",
+      image: ProductItem3,
+      price: 35000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 4,
+      name: "For the Groom",
+      image: ProductItem4,
+      price: 35000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 5,
+      name: "Civil Wedding Hamper",
+      image: ProductItem5,
+      price: 25000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 6,
+      name: "For the Bride Classic",
+      image: ProductItem6,
+      price: 55000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 7,
+      name: "For the Groom Classic",
+      image: ProductItem7,
+      price: 45000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 8,
+      name: "Civil Wedding Classic Hamper",
+      image: ProductItem8,
+      price: 40000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+    {
+      id: 9,
+      name: "Honeymoon Classic",
+      image: ProductItem9,
+      price: 35000,
+      description:
+        "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+      rating: 4.0,
+      reviews: 20,
+    },
+  ];
   return (
     <div className={productListing.container}>
       <div>
@@ -70,351 +177,66 @@ function ProductListingPage() {
 
             <div className={productListing.TopPicksDiv1}>
               {/* Top Pick box 1 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <Link to="/productdetails">
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem1}
-                        alt=""
-                      />
-                    </a></Link>
-                    
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <Link to="/productdetails">
-                          <p className={productListing.productName}>
-                            Special Wedding Hamper
-                          </p></Link>
-                          
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>30,000</p>
+              {isAddedToCart && (
+                <div className={productListing.addedToCartPopup}>
+                  Added to cart successfully!
+                </div>
+              )}
+              {/* Added to cart pop-up end */}
+              {topPicks.map((item, index) => {
+                return (
+                  <div className={productListing.TopPicksDiv} key={index}>
+                    <div className={productListing.TopPicksItem1}>
+                      <div className={productListing.TopPicksImgDiv}>
+                        {/* Add Link to the product details page */}
+                        <Link to={`/items/${item.id}`}>
+                          <img
+                            className={productListing.TopPicksImg1}
+                            src={item.image}
+                            alt=""
+                          />
+                        </Link>
+                        <div className={productListing.productNameDiv}>
+                          <div className={productListing.productNameDiv2}>
+                            <a className={productListing.TopPicksName} href="#">
+                              <p className={productListing.productName}>
+                                {item.name}
+                              </p>
+                              <div className={productListing.nairaDiv}>
+                                <img
+                                  className={productListing.naira}
+                                  src={Naira}
+                                  alt=""
+                                />
+                                <p className={productListing.amount}>
+                                  {item.price}
+                                </p>
+                              </div>
+                            </a>
+                            <button
+                              className={productListing.TopPicksBtn}
+                              type="submit"
+                              // onClick={() => addItem(item)}
+                              onClick={(event) => {
+                                // Execute the existing onClick handler (if there is one)
+                                if (event.onClick) {
+                                  event.onClick();
+                                }
+
+                                // Add your new onClick functionality here
+                                handleAddToCart(item);
+                              }}
+                            >
+                              Add to cart
+                            </button>
                           </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                );
+              })}
               {/* Top Pick box 1 end */}
-              {/* Top Pick box 2 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem2}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            Premium Wedding Hamper
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>45,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 2 end */}
-              {/* Top Pick box 3 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem3}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            For the Bride
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>35,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 3 end */}
-              {/* Top Pick box 4 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem4}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            For the Groom
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>35,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 4 end */}
-              {/* Top Pick box 5 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem5}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            Civil Wedding Hamper
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>25,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 5 end */}
-              {/* Top Pick box 6 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem6}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            For the Bride Classic
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>55,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 6 end */}
-              {/* Top Pick box 7 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem7}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            For the Groom Classic
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>45,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 7 end */}
-              {/* Top Pick box 8 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem8}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            Civil Wedding Classic Hamper
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>40,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 8 end */}
-              {/* Top Pick box 9 start */}
-              <div className={productListing.TopPicksDiv}>
-                <div className={productListing.TopPicksItem1}>
-                  <div className={productListing.TopPicksImgDiv}>
-                    <a href="#">
-                      <img
-                        className={productListing.TopPicksImg1}
-                        src={ProductItem9}
-                        alt=""
-                      />
-                    </a>
-                    <div className={productListing.productNameDiv}>
-                      <div className={productListing.productNameDiv2}>
-                        <a className={productListing.TopPicksName} href="#">
-                          <p className={productListing.productName}>
-                            Honeymoon Classic
-                          </p>
-                          <div className={productListing.nairaDiv}>
-                            <img
-                              className={productListing.naira}
-                              src={Naira}
-                              alt=""
-                            />
-                            <p className={productListing.amount}>35,000</p>
-                          </div>
-                        </a>
-                        <button
-                          className={productListing.TopPicksBtn}
-                          type="submit"
-                        >
-                          Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Top Pick box 9 end */}
             </div>
           </div>
         </div>
