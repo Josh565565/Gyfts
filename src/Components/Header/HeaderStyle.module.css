@@ -4,7 +4,7 @@
   padding: 0;
 }
 /* Hidden styles start */
-.menueOpenDiv {
+.menuOpenImg {
 display: none;
 }
 .menueOpenImg {
@@ -128,7 +128,7 @@ display: none;
   display: none;
 }
 
-.menueOpenDiv {
+.menuOpenImg {
   display: block;
   position: relative;
 }

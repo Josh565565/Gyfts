@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import headerStyle from "./HeaderStyle.module.css";
 import GiftBasket from "../Dropdown/GiftBasket";
@@ -8,6 +8,7 @@ import MobileDropDown from "../Dropdown/MobileDropDown";
 import cart from "../Assets/cart.png";
 import search from "../Assets/search-icon.png";
 import menuOpen from "../Assets/images/menu-icon-open.png";
+import CloseMenu from "../Assets/images/close-menu.svg";
 
 function Header() {
   // Basket dropdown start
@@ -15,29 +16,74 @@ function Header() {
   const toggleBasket = () => setBasketOpen(!basketOpen);
 
   // Gift Occasions Drop Down start
-  const [occasionsOpen, setoccasionsOpen] = useState(false);
-  const toggleoccasions = () => setoccasionsOpen(!occasionsOpen);
+  const [occasionsOpen, setOccasionsOpen] = useState(false);
+  const toggleOccasions = () => setOccasionsOpen(!occasionsOpen);
 
-  // Gift Occasions Drop Down start
-  const [mobileOpen, setmobileOpen] = useState(false);
-  const togglemobile = () => setmobileOpen(!mobileOpen);
+  // Mobile dropdown start
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [showCloseMenu, setShowCloseMenu] = useState(false);
+  const toggleMobile = () => {
+    setMobileOpen(!mobileOpen);
+    setShowCloseMenu(!showCloseMenu);
+  };
+
+  // Refs for dropdowns
+  const basketDropdownRef = useRef(null);
+  const occasionsDropdownRef = useRef(null);
+  const mobileDropdownRef = useRef(null);
+
+  // Add an event listener to close the dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        basketDropdownRef.current &&
+        !basketDropdownRef.current.contains(event.target)
+      ) {
+        setBasketOpen(false);
+      }
+      if (
+        occasionsDropdownRef.current &&
+        !occasionsDropdownRef.current.contains(event.target)
+      ) {
+        setOccasionsOpen(false);
+      }
+      if (
+        mobileDropdownRef.current &&
+        !mobileDropdownRef.current.contains(event.target)
+      ) {
+        setMobileOpen(false);
+        setShowCloseMenu(false);
+      }
+    }
+
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Unbind the event listener on cleanup
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className={headerStyle.landingPageHeaderContainer}>
       <header className={headerStyle.landingPageHeader}>
         <div className={headerStyle.leftSection}>
           <a href="">
-            <Link to="/"><div className={headerStyle.logo}>Gyfts</div></Link>
+            <Link to="/">
+              <div className={headerStyle.logo}>Gyfts</div>
+            </Link>
           </a>
           <nav>
             <ul className={headerStyle.ul}>
               <li>
                 <Link to="/">
-                <a className={headerStyle.link} href="#">
-                  Home
-                </a></Link>
-                
+                  <a className={headerStyle.link} href="#">
+                    Home
+                  </a>
+                </Link>
               </li>
-              <li className={headerStyle.basketCon}>
+              <li className={headerStyle.basketCon} ref={basketDropdownRef}>
                 <a onClick={toggleBasket} className={headerStyle.link} href="#">
                   Gift Basket
                 </a>
@@ -45,9 +91,12 @@ function Header() {
                   {basketOpen && <GiftBasket />}
                 </div>
               </li>
-              <li className={headerStyle.occasionsCon}>
+              <li
+                className={headerStyle.occasionsCon}
+                ref={occasionsDropdownRef}
+              >
                 <a
-                  onClick={toggleoccasions}
+                  onClick={toggleOccasions}
                   className={headerStyle.link}
                   href="#"
                 >
@@ -63,7 +112,9 @@ function Header() {
         <div className={headerStyle.rightSection}>
           <div className={headerStyle.cartSection}>
             <div className={headerStyle.cartIcon}>
-             <Link to="/shoppingcart"><img src={cart} alt="cart" /></Link>
+              <Link to="/shoppingcart">
+                <img src={cart} alt="cart" />
+              </Link>
             </div>
             <div className={headerStyle.cartLabel}></div>
           </div>
@@ -79,11 +130,25 @@ function Header() {
               className={headerStyle.searchTextInput}
             />
           </div>
-          <div className={headerStyle.menueOpenDiv}>
-            <img onClick={togglemobile} className={headerStyle.menueOpenImg} src={menuOpen} alt="" />
+          <div className={headerStyle.menuOpenDiv} ref={mobileDropdownRef}>
+            {showCloseMenu ? (
+              <img
+                onClick={toggleMobile}
+                className={headerStyle.closeMenuImg}
+                src={CloseMenu}
+                alt=""
+              />
+            ) : (
+              <img
+                onClick={toggleMobile}
+                className={headerStyle.menuOpenImg}
+                src={menuOpen}
+                alt=""
+              />
+            )}
             <div className={headerStyle.mobileDropDownDiv}>
-                  {mobileOpen && <MobileDropDown />}
-                </div>
+              {mobileOpen && <MobileDropDown />}
+            </div>
           </div>
         </div>
       </header>

@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../CartContext";
 import { useCart } from "react-use-cart";
 
-
 // Image Import start
 import Item1 from "../Assets/images/cart-item1.png";
 import Item2 from "../Assets/images/cart-item2.png";
@@ -20,28 +19,17 @@ import NairaTotal from "../Assets/images/cart-naira.svg";
 import NairaSubtotal from "../Assets/images/subtotal-naira.svg";
 
 function ShoppingCartPage() {
-  const { isEmpty, totalUniqueItems, items, totalItems, updateItemQuantity, removeItem, emptyCart, } = useCart();
-  if(isEmpty) return <h3>No Item added</h3>
+  const {
+    isEmpty,
+    totalUniqueItems,
+    items,
+    totalItems,
+    updateItemQuantity,
+    removeItem,
+    emptyCart,
+    cartTotal,
+  } = useCart();
 
-
-  // Define cartItems using the useState hook
-  const [cartItems, setCartItems] = useState([
-
-    {
-      id: 1,
-      image: Item1,
-      name: "For the Groom Classic",
-      price: "45,000",
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Beauty Gift Basket",
-      image: Item2,
-      price: "25,000",
-      quantity: 2,
-    },
-  ]);
   return (
     <div className={cart.con}>
       <div className={cart.headerDiv}>
@@ -60,10 +48,19 @@ function ShoppingCartPage() {
                 <p className={cart.textPrice}>Price</p>
               </div>
             </div>
+            <Link to="/">
+              {isEmpty && (
+                <h3 className={cart.noItem}>
+                  No item in cart <br />{" "}
+                  <span className={cart.shopNow}>Shop Now</span>
+                </h3>
+              )}
+            </Link>
+            {/* {if (isEmpty) return <h3>No Item added</h3>;} */}
             {/* Map through the cartItems and render each one */}
             {console.warn(items)}
-            {cartItems.map((item, index) => (
-              <div className={cart.itemDiv} key={item.id}>
+            {items.map((item, index) => (
+              <div className={cart.itemDiv} key={index}>
                 {console.warn(items)}
                 <div className={cart.itemImageDiv}>
                   <img className={cart.itemImg} src={item.image} alt="" />
@@ -71,36 +68,57 @@ function ShoppingCartPage() {
                 </div>
                 <div className={cart.plusMinusAmountDiv}>
                   <div className={cart.plusMinusDiv}>
-                    <div className={cart.plusDiv}>
+                    <div
+                      onClick={() =>
+                        updateItemQuantity(item.id, item.quantity + 1)
+                      }
+                      className={cart.plusDiv}
+                    >
                       <img src={Plus} alt="" />
                     </div>
                     <div className={cart.oneDiv}>
                       <p>{item.quantity}</p>
                     </div>
-                    <div className={cart.plusDiv}>
+                    <div
+                      onClick={() =>
+                        updateItemQuantity(item.id, item.quantity - 1)
+                      }
+                      className={cart.plusDiv}
+                    >
                       <img src={Minus} alt="" />
                     </div>
                   </div>
                   <div className={cart.amountRemoveDiv}>
                     <div className={cart.amountDiv}>
                       <img className={cart.nairaIcon} src={Naira} alt="" />
-                      <p className={cart.amountp}>{item.price}</p>
+                      <p className={cart.amountp}>
+                        {/* {item.price * item.quantity} */}
+                        {typeof item.price === "string"
+                          ? parseFloat(item.price.replace(/,/g, "")) *
+                            item.quantity
+                          : item.price * item.quantity}
+                      </p>
                     </div>
                     <div className={cart.cancelDiv}>
-                      <img className={cart.removeImg} src={Cancel} alt="" />
+                      <img
+                        onClick={() => removeItem(item.id)}
+                        className={cart.removeImg}
+                        src={Cancel}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             ))}
             {/* End of mapped cart items */}
-            
+
             {/* Total amount start */}
             <div className={cart.totalDiv}>
               <p className={cart.totalp}>Total</p>
               <div className={cart.totalAmountDiv}>
                 <img className={cart.totalNairaImg} src={NairaTotal} alt="" />
-                <p className={cart.totalAmount}>85,000</p>
+                <p className={cart.totalAmount}>{cartTotal}</p>
               </div>
             </div>
             {/* Total amount end */}
@@ -117,7 +135,7 @@ function ShoppingCartPage() {
               <p className={cart.subtotalP}>Subtotal</p>
               <div className={cart.subtotalAmountDiv}>
                 <img src={NairaSubtotal} alt="" />
-                <p className={cart.subtotalAmount}>85,000</p>
+                <p className={cart.subtotalAmount}>{cartTotal}</p>
               </div>
             </div>
             <div className={cart.subTotalDiv}>
@@ -137,7 +155,7 @@ function ShoppingCartPage() {
               <p className={cart.subtotalP}>Total</p>
               <div className={cart.subtotalAmountDiv}>
                 <img src={Naira} alt="" />
-                <p className={cart.subTotalAmount}>85,000</p>
+                <p className={cart.subTotalAmount}>{cartTotal}</p>
               </div>
             </div>
             <Link to="/checkout">
@@ -145,8 +163,8 @@ function ShoppingCartPage() {
                 className={cart.proceedInput}
                 type="submit"
                 value="Proceed to Checkout"
-              /></Link>
-
+              />
+            </Link>
           </div>
           <div className={cart.impDivMobile}>
             <img className={cart.impImgIcon} src={Imp} alt="" />

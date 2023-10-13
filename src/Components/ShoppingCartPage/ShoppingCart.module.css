@@ -90,6 +90,9 @@
     display: flex;
     align-items: center;
 }
+.itemImg{
+    width: 100px;
+}
 
 .itemImageDivPara {
     margin-left: 20px;
@@ -193,6 +196,32 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.noItem {
+    color: #252335;
+    font-family: League Spartan;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.shopNow {
+    padding: 10px 20px;
+    border-radius: 0.625rem;
+    background: #52489C;
+    color: #F9F9F9;
+    font-family: League Spartan;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    margin: auto;
+    cursor: pointer;
 }
 
 /* Total style end */

@@ -42,8 +42,6 @@ import MoreItem3 from "../Assets/images/more-item-3.png";
 function HomePage() {
   const { addItem } = useCart();
 
-
-
   // const { cartDispatch } = useContext(CartContext);
 
   // const addToCart = (item) => {
@@ -52,7 +50,6 @@ function HomePage() {
   // };
   // const handleAddToCart = (item) => {
   //   addToCart(item);
-
 
   //   console.log("Item added to cart:", item);
   // }
@@ -67,27 +64,12 @@ function HomePage() {
       image: BigImg1,
       rating: 4.0,
       reviews: 10,
-      relatedItems: [
-        {
-          id: 2,
-          name: "Special Wedding Hamper",
-          price: 30000,
-          image: MoreItem1,
-        },
-        {
-          id: 3,
-          name: "Beauty Gift Basket",
-          price: 25000,
-          image: MoreItem2,
-        },
-        // Add more related items as needed
-      ],
     },
     {
       id: 2,
       name: "Beauty Gift Basket",
       image: BeautyGiftBasket,
-      price: "25,000",
+      price: 25000,
       description:
         "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
       images: [BigImg1, Item2, Item3, Item4],
@@ -98,7 +80,7 @@ function HomePage() {
       id: 3,
       name: "Gift for Her",
       image: GiftForHer,
-      price: "15,000",
+      price: 15000,
       description:
         "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
       rating: 4.0,
@@ -108,7 +90,7 @@ function HomePage() {
       id: 4,
       name: "Luxury Food Basket",
       image: LuxuryFoodBasket,
-      price: "60,000",
+      price: 60000,
       description:
         "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
       rating: 4.0,
@@ -118,7 +100,7 @@ function HomePage() {
       id: 5,
       name: "New Born baby Gift Basket",
       image: NewBornBabyGiftBasket,
-      price: "20,000",
+      price: 20000,
       description:
         "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
       rating: 4.0,
@@ -128,7 +110,7 @@ function HomePage() {
       id: 6,
       name: "Men’s Grooming Basket",
       image: MensGroomingBasket,
-      price: "15,000",
+      price: 15000,
       description:
         "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
       rating: 4.0,
@@ -364,43 +346,45 @@ function HomePage() {
             <div className={homeStyle.TopPicksDiv1}>
               {topPicks.map((item, index) => {
                 return (
-                <div className={homeStyle.TopPicksDiv} key={index}>
-                  <div className={homeStyle.TopPicksItem1}>
-                    <div className={homeStyle.TopPicksImgDiv}>
-                      {/* Add Link to the product details page */}
-                      <Link to={`/items/${item.id}`}>
-                        <img
-                          className={homeStyle.TopPicksImg1}
-                          src={item.image}
-                          alt=""
-                        />
-                      </Link>
-                      <div className={homeStyle.productNameDiv}>
-                        <div className={homeStyle.productNameDiv2}>
-                          <a className={homeStyle.TopPicksName} href="#">
-                            <p className={homeStyle.productName}>{item.name}</p>
-                            <div className={homeStyle.nairaDiv}>
-                              <img
-                                className={homeStyle.naira}
-                                src={Naira}
-                                alt=""
-                              />
-                              <p className={homeStyle.amount}>{item.price}</p>
-                            </div>
-                          </a>
-                          <button
-                            className={homeStyle.TopPicksBtn}
-                            type="submit"
-                            onClick={() =>addItem(item)}
-                          >
-                            Add to cart
-                          </button>
+                  <div className={homeStyle.TopPicksDiv} key={index}>
+                    <div className={homeStyle.TopPicksItem1}>
+                      <div className={homeStyle.TopPicksImgDiv}>
+                        {/* Add Link to the product details page */}
+                        <Link to={`/items/${item.id}`}>
+                          <img
+                            className={homeStyle.TopPicksImg1}
+                            src={item.image}
+                            alt=""
+                          />
+                        </Link>
+                        <div className={homeStyle.productNameDiv}>
+                          <div className={homeStyle.productNameDiv2}>
+                            <a className={homeStyle.TopPicksName} href="#">
+                              <p className={homeStyle.productName}>
+                                {item.name}
+                              </p>
+                              <div className={homeStyle.nairaDiv}>
+                                <img
+                                  className={homeStyle.naira}
+                                  src={Naira}
+                                  alt=""
+                                />
+                                <p className={homeStyle.amount}>{item.price}</p>
+                              </div>
+                            </a>
+                            <button
+                              className={homeStyle.TopPicksBtn}
+                              type="submit"
+                              onClick={() => addItem(item)}
+                            >
+                              Add to cart
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                )
+                );
               })}
             </div>
           </div>
