@@ -3,10 +3,10 @@ import styles from "./FooterStyle.module.css"; // Import the CSS module
 
 import call from "../Assets/call.png";
 import Vector from "../Assets/Vector.svg";
-import facebook from "../Assets/facebook-icon.png";
-import instagram from "../Assets/instagram-icon.png";
-import twitter from "../Assets/twitter-icon.png";
-import linkedin from "../Assets/linkdln-icon.png";
+import facebook from "../Assets/images/facebook-icon.svg";
+import instagram from "../Assets/images/insta-icon.svg";
+import twitter from "../Assets/images/twitter-icon.svg";
+import linkedin from "../Assets/images/linkeedin-icon.svg";
 
 const Footer = () => {
   return (

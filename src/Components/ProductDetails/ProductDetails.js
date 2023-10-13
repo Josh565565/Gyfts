@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import product from "./ProductDetails.module.css";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { useCart } from "react-use-cart";
 
 // Images import start
 import BigImg1 from "../Assets/images/product-img1.png";
@@ -21,6 +22,10 @@ import Naira from "../Assets/images/more-naira.svg";
 import Back from "../Assets/images/more-back-arrow.svg";
 import Front from "../Assets/images/more-front-arrow.svg";
 import BeautyGiftBasket from "../Assets/images/Beauty-Gift-Basket.png";
+import GiftForHer from "../Assets/images/Gift-for-Her.png";
+import LuxuryFoodBasket from "../Assets/images/Luxury-Food-Basket.png";
+import NewBornBabyGiftBasket from "../Assets/images/New-Born-baby-Gift-Basket.png";
+import MensGroomingBasket from "../Assets/images/Mens-Grooming-Basket.png";
 
 const items = [
   {
@@ -59,8 +64,60 @@ const items = [
     rating: 4.0,
     reviews: 20,
   },
+  {
+    id: 3,
+    name: "Gift for Her",
+    image: GiftForHer,
+    price: 15000,
+    description:
+      "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+    rating: 4.0,
+    reviews: 20,
+  },
+  {
+    id: 4,
+    name: "Luxury Food Basket",
+    image: LuxuryFoodBasket,
+    price: 60000,
+    description:
+      "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+    rating: 4.0,
+    reviews: 20,
+  },
+  {
+    id: 5,
+    name: "New Born baby Gift Basket",
+    image: NewBornBabyGiftBasket,
+    price: 20000,
+    description:
+      "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+    rating: 4.0,
+    reviews: 20,
+  },
+  {
+    id: 6,
+    name: "Men’s Grooming Basket",
+    image: MensGroomingBasket,
+    price: 15000,
+    description:
+      "New Special Wedding Hamper are a thoughtful selection and mix of items that cater to couple’s needs and preferences.",
+    rating: 4.0,
+    reviews: 20,
+  },
 ];
 function ProductDetails() {
+  const { addItem } = useCart();
+  const [isAddedToCart, setAddedToCart] = useState(false);
+
+  const handleAddToCart = (item) => {
+    addItem(item);
+    setAddedToCart(true);
+
+    // Hide the pop-up after 3 seconds
+    setTimeout(() => {
+      setAddedToCart(false);
+    }, 3000);
+  };
   const { itemId } = useParams();
   const item = items.find((item) => item.id === parseInt(itemId));
 
@@ -70,10 +127,17 @@ function ProductDetails() {
   }
   return (
     <div className={product.container}>
-      <div>
+      <div className={product.HeaderDiv}>
         <Header />
       </div>
       <main>
+        {/* Added to cart pop-up start */}
+        {isAddedToCart && (
+          <div className={product.addedToCartPopup}>
+            Added to cart successfully!
+          </div>
+        )}
+        {/* Added to cart pop-up end */}
         {/* Section 1 start */}
         <section className={product.section1}>
           <div className={product.section1Div1}>
@@ -108,7 +172,7 @@ function ProductDetails() {
                   src={NairaIcon}
                   alt=""
                 />
-                <p className={product.amount1}>{item.price}</p>
+                <p className={product.amount1}>{item.price.toLocaleString()}</p>
               </div>
               <div className={product.itemDiv}>
                 <img src={Dot} alt="" />
@@ -116,7 +180,16 @@ function ProductDetails() {
               </div>
             </div>
             <div className={product.addToCartDiv}>
-              <button className={product.addToCartBtn}>
+              <button
+                onClick={(event) => {
+                  if (event.onClick) {
+                    event.onClick();
+                  }
+
+                  handleAddToCart(item);
+                }}
+                className={product.addToCartBtn}
+              >
                 <img src={CartIcon} alt="" />
                 <p className={product.addToCart}>Add to cart</p>
               </button>

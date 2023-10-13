@@ -384,12 +384,10 @@ function HomePage() {
                               type="submit"
                               // onClick={() => addItem(item)}
                               onClick={(event) => {
-                                // Execute the existing onClick handler (if there is one)
                                 if (event.onClick) {
                                   event.onClick();
                                 }
 
-                                // Add your new onClick functionality here
                                 handleAddToCart(item);
                               }}
                             >

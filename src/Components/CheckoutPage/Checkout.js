@@ -98,19 +98,19 @@ function Checkout() {
                   <input className={checkout.cardNameInput} type="text" />
                 </div>
                 <div className={checkout.cardNumberDiv}>
-                  <p className={checkout.cardPara}>Card Name</p>
+                  <p className={checkout.cardPara}>Card Number</p>
                   <input className={checkout.cardNameInput} type="text" />
                 </div>
                 <div className={checkout.expiryDateCvvDiv}>
                   <div className={checkout.expiryDateDiv}>
-                    <p className={checkout.cardPara}>Card Name</p>
+                    <p className={checkout.cardPara}>Expiry Date</p>
                     <input
                       className={checkout.expiryDateCvvInput}
                       type="text"
                     />
                   </div>
                   <div className={checkout.cvvDiv}>
-                    <p className={checkout.cardPara}>Card Name</p>
+                    <p className={checkout.cardPara}>CCV</p>
                     <input
                       className={checkout.expiryDateCvvInput}
                       type="text"

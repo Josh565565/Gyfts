@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import dropstyle from "./MobileDropDown.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function MobileDropDown() {
   const [showGiftBaskets, setShowGiftBaskets] = useState(false);
@@ -43,10 +44,18 @@ function MobileDropDown() {
         </h4>
         {showGiftBaskets && (
           <ul className={dropstyle.item1}>
-            <li className={dropstyle.li}>Food Basket</li>
-            <li className={dropstyle.li}>Fruit Basket</li>
-            <li className={dropstyle.li}>Wine Basket</li>
-            <li className={dropstyle.li}>Flower Basket</li>
+            <Link to="/productlisting">
+              <li className={dropstyle.li}>Food Basket</li>
+            </Link>
+            <Link to="/productlisting">
+              <li className={dropstyle.li}>Fruit Basket</li>
+            </Link>
+            <Link to="/productlisting">
+              <li className={dropstyle.li}>Wine Basket</li>
+            </Link>
+            <Link to="/productlisting">
+              <li className={dropstyle.li}>Flower Basket</li>
+            </Link>
           </ul>
         )}
       </div>
@@ -54,7 +63,7 @@ function MobileDropDown() {
         <h4 className={dropstyle.occasionsHeader} onClick={toggleGiftOccasions}>
           <span className={dropstyle.occasionsHeaderSpan}>Gift Occasions</span>
           <FontAwesomeIcon
-            icon={showGiftOccasions ? "angle-down" : "angle-right"} // Use the FontAwesome icon
+            icon={showGiftOccasions ? "angle-down" : "angle-right"}
           />
         </h4>
         {showGiftOccasions && (
@@ -62,19 +71,35 @@ function MobileDropDown() {
             <h4 className={dropstyle.item1Header} onClick={toggleEvents}>
               Events{" "}
               <FontAwesomeIcon
-                icon={showEvents ? "angle-down" : "angle-right"} // Use the FontAwesome icon
+                icon={showEvents ? "angle-down" : "angle-right"}
               />
             </h4>
             {showEvents && (
               <ul className={dropstyle.item1}>
-                <li className={dropstyle.li}>Wedding Gifts</li>
-                <li className={dropstyle.li}>Birthday Gifts</li>
-                <li className={dropstyle.li}>Baby Gifts</li>
-                <li className={dropstyle.li}>Get Well Gifts</li>
-                <li className={dropstyle.li}>Congratulations Gifts</li>
-                <li className={dropstyle.li}>Thank You Gifts</li>
-                <li className={dropstyle.li}>Engagement Gifts</li>
-                <li className={dropstyle.li}>Graduation Gifts</li>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Wedding Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Birthday Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Baby Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Get Well Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Congratulations Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Thank You Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Engagement Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Graduation Gifts</li>
+                </Link>
               </ul>
             )}
             <h4 className={dropstyle.item1Header} onClick={toggleSeasonal}>
@@ -85,11 +110,21 @@ function MobileDropDown() {
             </h4>
             {showSeasonal && (
               <ul className={dropstyle.item1}>
-                <li className={dropstyle.li}>Mother’s Day Gifts</li>
-                <li className={dropstyle.li}>Father’s Day Gifts</li>
-                <li className={dropstyle.li}>Christmas Gifts</li>
-                <li className={dropstyle.li}>Valentine’s Day Gifts</li>
-                <li className={dropstyle.li}>Easter Gifts</li>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Mother’s Day Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Father’s Day Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Christmas Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Valentine’s Day Gifts</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Easter Gifts</li>
+                </Link>
               </ul>
             )}
             <h4 className={dropstyle.item1Header} onClick={toggleRecipients}>
@@ -100,11 +135,21 @@ function MobileDropDown() {
             </h4>
             {showRecipients && (
               <ul className={dropstyle.item1}>
-                <li className={dropstyle.li}>Gifts for Men</li>
-                <li className={dropstyle.li}>Gifts for Women</li>
-                <li className={dropstyle.li}>Gifts for Parents</li>
-                <li className={dropstyle.li}>Gifts for Children</li>
-                <li className={dropstyle.li}>Gifts for Friends</li>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Gifts for Men</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Gifts for Women</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Gifts for Parents</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Gifts for Children</li>
+                </Link>
+                <Link to="/productlisting">
+                  <li className={dropstyle.li}>Gifts for Friends</li>
+                </Link>
               </ul>
             )}
           </div>
