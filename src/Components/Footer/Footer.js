@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./FooterStyle.module.css"; // Import the CSS module
+import styles from "./FooterStyle.module.css";
+import { Link } from "react-router-dom";
 
 import call from "../Assets/call.png";
 import Vector from "../Assets/Vector.svg";
@@ -13,9 +14,11 @@ const Footer = () => {
     <footer className={styles["landing-page-footer"]}>
       <div className={styles["left-section"]}>
         <div className={styles["gifts"]}>
-          <a href="">
-            <p className={styles["logo"]}>Gyft</p>
-          </a>
+          <Link to="/">
+            <a href="">
+              <p className={styles["logo"]}>Gyft</p>
+            </a>
+          </Link>
           <p className={styles["logo-p"]}>
             We offer a wide selection of unique <br /> and high-quality gifts
             for every occasion
