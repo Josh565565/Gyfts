@@ -164,7 +164,7 @@
     justify-content: space-between;
     /* align-items: center; */
     padding: 28px 30px 0 30px;
-
+    overflow: hidden;
   }
 
   .ul {
