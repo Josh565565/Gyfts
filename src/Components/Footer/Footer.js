@@ -100,7 +100,7 @@ const Footer = () => {
             className={styles.emailInput}
             type="email"
             placeholder="Email Address"
-          />{" "}
+          />
           <br></br>
           <button className={styles.btn} type="submit">
             Subscribe
