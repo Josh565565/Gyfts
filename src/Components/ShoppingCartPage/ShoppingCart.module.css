@@ -568,6 +568,7 @@
         height: 28.9375rem;
         padding: 25px;
         margin-top: -160px;
+        overflow: hidden;
         /* margin: 0 30px; */
     }
 
