@@ -16,7 +16,7 @@ const Footer = () => {
         <div className={styles["gifts"]}>
           <Link to="/">
             <a href="">
-              <p className={styles["logo"]}>Gyft</p>
+              <p className={styles["logo"]}>Gyfts</p>
             </a>
           </Link>
           <p className={styles["logo-p"]}>
