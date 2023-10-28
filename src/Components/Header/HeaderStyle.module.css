@@ -35,14 +35,13 @@
 }
 
 .logo {
-  color: #52489C;
+  color: #52489c;
   font-family: League Spartan;
   font-size: 1.25rem;
   font-weight: 700;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-
 }
 
 .ul {
@@ -83,7 +82,7 @@
 }
 
 .link:hover {
-  color: #52489C;
+  color: #52489c;
   font-weight: 600;
 }
 
@@ -104,12 +103,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   top: 0;
   right: 0;
   margin: -5px -5px 0 0;
-  background-color: #52489C;
+  background-color: #52489c;
   width: 70%;
   /* width: 16px; */
   /* height: 16px; */
@@ -125,7 +124,7 @@
   text-align: center;
   width: 70%;
   height: 70%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0.75rem;
   margin-top: 2px;
 }
@@ -137,7 +136,7 @@
   position: relative;
   /* Position relative for positioning the search icon */
 }
-.searchIconMobile{
+.searchIconMobile {
   display: none;
 }
 .searchIcon {
@@ -155,18 +154,18 @@
   width: 375px;
   height: 38px;
   /* padding-left: 20px; */
-  border: 1px solid #46435B;
+  border: 1px solid #46435b;
   border-radius: 10px;
   font-size: 16px;
   text-indent: 40px;
 }
 
-.searchResults{
+.searchResults {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* border: 1px solid #46435B; */
   border-radius: 10px;
   padding: 0px;
@@ -174,16 +173,16 @@
   z-index: 999;
 }
 .withBorder {
-  border: 1px solid #46435B;
+  border: 1px solid #46435b;
 }
-.searchResultItem{
+.searchResultItem {
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 5px;
   /* border-bottom: 1px solid #46435B; */
   background-color: #524f66;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -198,7 +197,7 @@
     justify-content: space-between;
     /* align-items: center; */
     padding: 28px 30px 0 30px;
-    margin-bottom: -40px;
+    /* margin-bottom: -40px; */
     overflow: hidden;
   }
 
@@ -224,10 +223,10 @@
     right: 0;
     z-index: 999;
   }
-  .searchIcon{
+  .searchIcon {
     display: none;
   }
-  
+
   .searchInputMobileDiv {
     position: absolute;
     top: 25px;
@@ -245,7 +244,7 @@
     margin-left: -40px;
     transform: translateY(-50%);
   }
-  .searchResults{
+  .searchResults {
     display: none;
   }
 
