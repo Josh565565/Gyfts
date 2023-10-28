@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
   Navigate,
+  Outlet,
 } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 
@@ -21,21 +22,19 @@ import MobileDropDown from "./Components/Dropdown/MobileDropDown";
 
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
+      <CartProvider>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/productlisting" element={<ProductListingPage />} />
-          {/* <Route path="/productdetails" element={<ProductDetails />} /> */}
-          <Route path="/items/:itemId" element={<ProductDetails />} />
-          <Route path="/shoppingcart" element={<ShoppingCartPage />} />
-          <Route path="/checkout" element={<Checkout />} />
-          {/* Redirect to home page if no route matches */}
-          <Route path="*" element={<Navigate to="/" />} />
-          {/* <Route path="/news/:slug" element={<NewsViewPage />} /> */}
+          <Route path="/" element={<Outlet />}>
+            <Route index element={<HomePage />} />
+            <Route path="/productlisting" element={<ProductListingPage />} />
+            <Route path="/items/:itemId" element={<ProductDetails />} />
+            <Route path="/shoppingcart" element={<ShoppingCartPage />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Route>
         </Routes>
-      </Router>
-    </>
+      </CartProvider>
+    </Router>
   );
 }
 

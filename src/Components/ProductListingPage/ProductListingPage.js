@@ -35,7 +35,7 @@ function ProductListingPage() {
 
   const topPicks = [
     {
-      id: 1,
+      id: 7,
       name: "Special Wedding Hamper",
       price: 30000,
       description:
@@ -45,7 +45,7 @@ function ProductListingPage() {
       reviews: 10,
     },
     {
-      id: 2,
+      id: 8,
       name: "Premium Wedding Hamper",
       image: ProductItem2,
       price: 45000,
@@ -56,7 +56,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 3,
+      id: 9,
       name: "For the Bride",
       image: ProductItem3,
       price: 35000,
@@ -66,7 +66,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 4,
+      id: 10,
       name: "For the Groom",
       image: ProductItem4,
       price: 35000,
@@ -76,7 +76,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 5,
+      id: 11,
       name: "Civil Wedding Hamper",
       image: ProductItem5,
       price: 25000,
@@ -86,7 +86,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 6,
+      id: 12,
       name: "For the Bride Classic",
       image: ProductItem6,
       price: 55000,
@@ -96,7 +96,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 7,
+      id: 13,
       name: "For the Groom Classic",
       image: ProductItem7,
       price: 45000,
@@ -106,7 +106,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 8,
+      id: 14,
       name: "Civil Wedding Classic Hamper",
       image: ProductItem8,
       price: 40000,
@@ -116,7 +116,7 @@ function ProductListingPage() {
       reviews: 20,
     },
     {
-      id: 9,
+      id: 15,
       name: "Honeymoon Classic",
       image: ProductItem9,
       price: 35000,

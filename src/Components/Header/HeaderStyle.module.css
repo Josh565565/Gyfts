@@ -127,7 +127,7 @@
   height: 70%;
   color: #FFFFFF;
   font-size: 0.75rem;
-  margin-top: -2px;
+  margin-top: 2px;
 }
 
 .searchInput {
@@ -137,7 +137,9 @@
   position: relative;
   /* Position relative for positioning the search icon */
 }
-
+.searchIconMobile{
+  display: none;
+}
 .searchIcon {
   /* Style your search icon image here */
   width: 20px;
@@ -159,6 +161,33 @@
   text-indent: 40px;
 }
 
+.searchResults{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  /* border: 1px solid #46435B; */
+  border-radius: 10px;
+  padding: 0px;
+  margin-top: 10px;
+  z-index: 999;
+}
+.withBorder {
+  border: 1px solid #46435B;
+}
+.searchResultItem{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+  /* border-bottom: 1px solid #46435B; */
+  background-color: #524f66;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Mobile style start */
 @media (max-width: 1270px) {
   .landingPageHeader {
@@ -169,6 +198,7 @@
     justify-content: space-between;
     /* align-items: center; */
     padding: 28px 30px 0 30px;
+    margin-bottom: -40px;
     overflow: hidden;
   }
 
@@ -188,23 +218,35 @@
   .menueOpenImg {
     display: block;
   }
+
   .mobileDropDownDiv {
     position: absolute;
-    /* top: 0; */
-    /* left: 0; */
     right: 0;
     z-index: 999;
   }
-
-  .searchIcon {
+  .searchIcon{
+    display: none;
+  }
+  
+  .searchInputMobileDiv {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+  }
+  .searchIconMobile {
     /* Style your search icon image here */
+    display: block;
     width: 20px;
     height: 20px;
-    position: absolute;
-    top: 50%;
-    left: -100px;
-    /* Adjust the left position of the search icon */
+    margin-top: 15px;
+    margin-left: -40px;
     transform: translateY(-50%);
+  }
+  .searchResults{
+    display: none;
   }
 
   .cartIcon {
