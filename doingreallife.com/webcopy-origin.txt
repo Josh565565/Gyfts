@@ -1,0 +1,780 @@
+Uri: http://connect.doingreallife.com/
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\index-1.htm
+Content Type: text/html
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\ajax\libs\handlebars.js\4.7.7\handlebars.min.js
+Content Type: application/javascript
+
+Uri: https://doingreallife.com/
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\index.htm
+Content Type: text/html
+
+Uri: https://doingreallife.com/about
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\about.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/about/im-new
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\about\im-new.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/about/our-beliefs
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\about\our-beliefs.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/about/our-team
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\about\our-team.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/contact
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\contact.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/calendar
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\calendar.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-10
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-10.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-10.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-10.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-17
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-17.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-17.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-17.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-24
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-24.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-24.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-24.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-31
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-31.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-07-31.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-07-31.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-07
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-07.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-07.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-07.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-14
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-14.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-14.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-14.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-21
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-21.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-21.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-21.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-28
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-28.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-08-28.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-08-28.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-04
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-04.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-04.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-04.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-11
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-11.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-11.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-11.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-18
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-18.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-18.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-18.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-25
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-25.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-09-25.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-09-25.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-02
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-02.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-02.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-02.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-09
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-09.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-09.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-09.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-16
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-16.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-16.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-16.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-23
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-23.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-23.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-23.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-30
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-30.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-10-30.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-10-30.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-06
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-06.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-06.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-06.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-13
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-13.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-13.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-13.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-20
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-20.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-20.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-20.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-27
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-27.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-11-27.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-11-27.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-04
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-04.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-04.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-04.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-11
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-11.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-11.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-11.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-18
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-18.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-18.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-18.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-25
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-25.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2024-12-25.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2024-12-25.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2025-01-01
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2025-01-01.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2025-01-01.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2025-01-01.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2025-01-08
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2025-01-08.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2025-01-08.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2025-01-08.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2025-01-15
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2025-01-15.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/club-a-c-t-s-real-youth/2025-01-15.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\club-a-c-t-s-real-youth\2025-01-15.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-07-14
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-07-14.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-07-14.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-07-14.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-07-21
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-07-21.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-07-21.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-07-21.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-07-28
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-07-28.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-07-28.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-07-28.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-04
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-04.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-04.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-04.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-11
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-11.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-11.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-11.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-18
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-18.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-18.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-18.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-25
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-25.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-08-25.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-08-25.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-01
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-01.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-01.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-01.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-08
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-08.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-08.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-08.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-15
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-15.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-15.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-15.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-22
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-22.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-22.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-22.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-29
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-29.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-09-29.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-09-29.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-06
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-06.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-06.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-06.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-13
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-13.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-13.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-13.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-20
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-20.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-20.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-20.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-27
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-27.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-10-27.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-10-27.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-03
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-03.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-03.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-03.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-10
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-10.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-10.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-10.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-17
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-17.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-17.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-17.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-24
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-24.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-11-24.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-11-24.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-01
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-01.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-01.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-01.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-08
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-08.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-08.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-08.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-15
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-15.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-15.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-15.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-22
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-22.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-22.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-22.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-29
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-29.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2024-12-29.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2024-12-29.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2025-01-05
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2025-01-05.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2025-01-05.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2025-01-05.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2025-01-12
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2025-01-12.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2025-01-12.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2025-01-12.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/events/encounter-service/2025-01-19
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2025-01-19.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/events/encounter-service/2025-01-19.ics
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\events\encounter-service\2025-01-19.ics
+Content Type: text/calendar
+
+Uri: https://doingreallife.com/fonts/fontawesome/webfont.eot?
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\fonts\fontawesome\webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://doingreallife.com/fonts/fontawesome/webfont.eot?v=3.2.1
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\fonts\fontawesome\webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://doingreallife.com/fonts/fontawesome/webfont.svg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\fonts\fontawesome\webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://doingreallife.com/fonts/fontawesome/webfont.ttf?v=3.2.1
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\fonts\fontawesome\webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://doingreallife.com/fonts/fontawesome/webfont.woff?v=3.2.1
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\fonts\fontawesome\webfont.woff
+Content Type: application/font-woff
+
+Uri: https://doingreallife.com/give
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\give.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/images/ajax-loader.gif
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\ajax-loader.gif
+Content Type: image/gif
+
+Uri: https://doingreallife.com/images/community/add_comment_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\add_comment_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/add_corner_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\add_corner_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/add_post_btn.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\add_post_btn.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/add_post_icon_black.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\add_post_icon_black.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/arrow_down_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\arrow_down_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/arrow_right_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\arrow_right_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/calendar_icon_large.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\calendar_icon_large.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/close_corner_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\close_corner_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/comment_top.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\comment_top.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/divider_bg.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\divider_bg.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/feed_filter_btns.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\feed_filter_btns.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/group_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\group_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/group_icon_blue.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\group_icon_blue.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/help_btn.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\help_btn.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/join-leave-btns.gif
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\join-leave-btns.gif
+Content Type: image/gif
+
+Uri: https://doingreallife.com/images/community/post_dl_btn.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\post_dl_btn.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/post_flag_icon.gif
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\post_flag_icon.gif
+Content Type: image/gif
+
+Uri: https://doingreallife.com/images/community/post_flag_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\post_flag_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/post_link_btn.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\post_link_btn.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/privacy_btn.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\privacy_btn.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/profile_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\profile_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/profile_view.gif
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\profile_view.gif
+Content Type: image/gif
+
+Uri: https://doingreallife.com/images/community/remove_icon.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\remove_icon.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/search_bar.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\search_bar.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/sidebar_filter_btns.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\sidebar_filter_btns.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/community/view_all_btn.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\community\view_all_btn.png
+Content Type: image/png
+
+Uri: https://doingreallife.com/images/global_dashboard/mobile-menu-bg.svg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\images\global_dashboard\mobile-menu-bg.svg
+Content Type: image/svg+xml
+
+Uri: https://doingreallife.com/login
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\login.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/media/pages/sunday-encounters
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\media\pages\sunday-encounters.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/media/pages/worship-nights--8
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\media\pages\worship-nights--8.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/pages/media
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\pages\media.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/password/new
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\password\new.html
+Content Type: text/html
+
+Uri: https://doingreallife.com/themes/stylesheet.css?timestamp=2024-07-08+08:07:54+-0700
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\themes\stylesheet.css
+Content Type: text/css
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/10/29/21/08/09/4badf5ff-3c07-4062-b9b7-99a760cded6d/real place picture.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\10\29\21\08\09\4badf5ff-3c07-4062-b9b7-99a760cded6d\real place picture.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/10/29/21/08/11/736a8625-5096-459c-b67f-aee91963a33e/family-of-four-walking-at-the-street-2253879.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\10\29\21\08\11\736a8625-5096-459c-b67f-aee91963a33e\family-of-four-walking-at-the-street-2253879.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/10/29/21/08/12/57582f74-2885-4f54-a41c-842a9a340451/RealLifeChurch_FaviconLarge Deep Space Sparkle.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\10\29\21\08\12\57582f74-2885-4f54-a41c-842a9a340451\RealLifeChurch_FaviconLarge Deep Space Sparkle.png
+Content Type: image/png
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/10/30/20/13/53/0bca22b5-bc92-4e52-9a48-b8f9dc12d870/real life4.jpeg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\10\30\20\13\53\0bca22b5-bc92-4e52-9a48-b8f9dc12d870\real life4.jpeg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/10/30/20/13/53/69b745f7-9ea1-4df3-a624-c05b85200218/alexa-mazzarello-316937.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\10\30\20\13\53\69b745f7-9ea1-4df3-a624-c05b85200218\alexa-mazzarello-316937.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/10/30/20/13/53/75574499-5bb5-4898-b7d4-ba8159f5903b/real life 1.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\10\30\20\13\53\75574499-5bb5-4898-b7d4-ba8159f5903b\real life 1.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/11/01/06/47/27/de9df7ad-4676-4423-9347-c620da021df4/christin-hume-316558.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\11\01\06\47\27\de9df7ad-4676-4423-9347-c620da021df4\christin-hume-316558.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/11/01/13/52/46/4b45ced4-3f76-4d8f-88a4-2902b60f6318/cynthia-magana-mFPJXEQfb9M-unsplash.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\11\01\13\52\46\4b45ced4-3f76-4d8f-88a4-2902b60f6318\cynthia-magana-mFPJXEQfb9M-unsplash.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/11/01/16/47/42/64255783-fbee-4acb-b6f2-0dc22487e211/Blue Shannon.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\11\01\16\47\42\64255783-fbee-4acb-b6f2-0dc22487e211\Blue Shannon.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/11/01/16/47/42/7ce05a9f-84d0-4751-9bfe-b881e59fe962/Ronnie Yellow.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\11\01\16\47\42\7ce05a9f-84d0-4751-9bfe-b881e59fe962\Ronnie Yellow.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/11/02/11/18/08/ce6b3ddf-68e1-42f7-90bb-efdf03fb3ff6/helena-lopes-e3OUQGT9bWU-unsplash.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\11\02\11\18\08\ce6b3ddf-68e1-42f7-90bb-efdf03fb3ff6\helena-lopes-e3OUQGT9bWU-unsplash.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2020/11/18/14/32/24/51bd85bb-890d-488d-b783-77efa3fe0495/cynthia-magana-mFPJXEQfb9M-unsplash.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2020\11\18\14\32\24\51bd85bb-890d-488d-b783-77efa3fe0495\cynthia-magana-mFPJXEQfb9M-unsplash.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2022/01/31/05/34/20/87d9182c-5a65-48aa-9a93-fb704b4c1783/RLC 21 Days of Prayer.pdf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2022\01\31\05\34\20\87d9182c-5a65-48aa-9a93-fb704b4c1783\RLC 21 Days of Prayer.pdf
+Content Type: application/pdf
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2022/02/25/16/45/21/19c55737-dfd7-4eb9-a10c-53928cc32afb/Real Life.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2022\02\25\16\45\21\19c55737-dfd7-4eb9-a10c-53928cc32afb\Real Life.png
+Content Type: image/png
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2022/02/25/16/52/08/f133adb0-b68e-4a53-ae90-fc064fa41137/ACTS Youth.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2022\02\25\16\52\08\f133adb0-b68e-4a53-ae90-fc064fa41137\ACTS Youth.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2022/02/26/04/53/56/9b541e98-d27f-44f6-9c20-95790192c2c2/ACTS Youth.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2022\02\26\04\53\56\9b541e98-d27f-44f6-9c20-95790192c2c2\ACTS Youth.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2022/02/26/04/54/31/da8a2211-d23f-439f-87fd-34213d6d33c3/Real Life.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2022\02\26\04\54\31\da8a2211-d23f-439f-87fd-34213d6d33c3\Real Life.png
+Content Type: image/png
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2023/02/22/22/08/03/3e0a3860-5616-4527-8659-2b9112a92edb/1D5A0588.JPG
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2023\02\22\22\08\03\3e0a3860-5616-4527-8659-2b9112a92edb\1D5A0588.JPG
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2023/03/13/11/51/06/7731773f-2b90-4f40-a04e-c698e3c7d864/Real Life New Logo - White.png
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2023\03\13\11\51\06\7731773f-2b90-4f40-a04e-c698e3c7d864\Real Life New Logo - White.png
+Content Type: image/png
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/2024/01/10/18/35/39/397e3e2e-6369-45ca-89e8-adf22aa0be72/Willoughby.jpg
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\2024\01\10\18\35\39\397e3e2e-6369-45ca-89e8-adf22aa0be72\Willoughby.jpg
+Content Type: image/jpeg
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/assets/application-92ba7e2d7a52f875d8c71a7b4835936304e5575db2a9e1e0c22838bbf7a13649.js
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\assets\application-92ba7e2d7a52f875d8c71a7b4835936304e5575db2a9e1e0c22838bbf7a13649.js
+Content Type: application/javascript
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/assets/print-721dd741c271c88d5d44554f07c738b1767f86de23ba2a906386b7ef24cad1d7.css
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\assets\print-721dd741c271c88d5d44554f07c738b1767f86de23ba2a906386b7ef24cad1d7.css
+Content Type: text/css
+
+Uri: https://dq5pwpg1q8ru0.cloudfront.net/packs/js/application-0f32cf2e69f40da95c6c.js
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\packs\js\application-0f32cf2e69f40da95c6c.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css?family=Oswald:400,600|Source+Sans+Pro:400,400i,700,700i&display=swap
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/materialicons/v88/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\materialicons\v88\flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUZiYA.ttf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\oswald\v53\TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUZiYA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\oswald\v53\TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v22/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\sourcesanspro\v22\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\sourcesanspro\v22\6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v22/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18E.ttf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\sourcesanspro\v22\6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18E.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\s\sourcesanspro\v22\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://tithe.ly/widget/v3/give.js?3
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\widget\v3\give.js
+Content Type: application/javascript
+
+Uri: https://www.recaptcha.net/recaptcha/api.js?render=6LeMDL8bAAAAAL1cFQtJTGaLsMnk2PaBQ-3NtJGm
+File Name: C:\Users\chinazaekpere\Documents\Gyfts\doingreallife.com\recaptcha\api.js
+Content Type: text/javascript
+
